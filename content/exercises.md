@@ -38,10 +38,21 @@ We will keep these exercises but **will change the description** so that there i
 
 (working on it)
 
+- **Working on changing exercises in reproducible research**:
+  - [Recording dependencies](https://coderefinery.github.io/reproducible-research/dependencies/) (20 min): Add R examples.
+  - [Recording computational steps](https://coderefinery.github.io/reproducible-research/workflow-management/): Make it more R-relevant.
+  - [Containers](https://coderefinery.github.io/reproducible-research/environments/): **Rewrite this episode** and add exercise where we discuss a container recipe file
+    and imagine a time travel to 3 years later and discuss problems and solutions.
+- No individual/group exercise in the social coding part. We will all participate via collaborative document.
+  In other words nothing to prepare for team leads.
+
 
 ### Day 5 (Jupyter and documentation)
 
-(working on it)
+- [First computational notebook](https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook) (20 min).
+- [Sharing a notebook using Binder](https://coderefinery.github.io/jupyter/sharing/) (20 min).
+- [Writing good README files](https://coderefinery.github.io/documentation/writing-readme-files/) (15 min). Learners/groups can choose 1 of the 3 exercises there.
+- [Sphinx and Markdown](https://coderefinery.github.io/documentation/sphinx/#exercise-sphinx-content) (20 min). There are optional exercises.
 
 
 ### Day 6 (testing and modular code development)
@@ -50,5 +61,5 @@ We will keep these exercises but **will change the description** so that there i
   setting up [automated testing](https://coderefinery.github.io/testing/continuous-integration/) (20 min).
   We also plan to offer an R exercise for those who prefer R over Python.
 - [Test design](https://coderefinery.github.io/testing/test-design/) (20 min). No significant changes planned.
-- No individual/group exercise in modular code development: learners will
+- No individual/group exercise in modular code development. Learners will
   participate all via collaborative document and ask and advice instructors.
