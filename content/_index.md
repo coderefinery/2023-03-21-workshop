@@ -19,7 +19,8 @@ We collect here the exercise groups that we know:
   - [Registration](https://vu.nl/en/events/2023/workshops-coderefinery)
 - EMBL (more info soon)
 - [University of Oslo](https://www.ub.uio.no/english/courses-events/courses/other/coderefinery/)
-- San Sebastian (more info soon)
+- [Materials Physics Center (CFM)](https://cfm.ehu.es), Donostia - San Sebastian
+  - Local in-person groups and local suport: [registration](https://forms.gle/GvN6H1AhXgxKNecc7)
 - DTU Biosustain
   - Local in-person group in [Novo Nordisk Foundation Center for Biosustainability](https://www.biosustain.dtu.dk/), Kemitorvet, Building 220, 2800 Kgs. Lyngby
   - Contact: [Ding He](https://orbit.dtu.dk/en/persons/ding-he)
