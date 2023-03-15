@@ -17,7 +17,10 @@ We collect here the exercise groups that we know:
   - [Registration Week 2](https://www.tudelft.nl/en/events/2023/library/coderefinery-workshops-ii)
 - VU Amsterdam
   - [Registration](https://vu.nl/en/events/2023/workshops-coderefinery)
-- EMBL (more info soon)
+- EMBL, [Bio-IT](https://bio-it.embl.de/)
+  - [Registration Week 1](https://bio-it.embl.de/events/version-control-with-git-git-embl-de-git-week-basic-module-2/)
+  - [Registration Week 2](https://bio-it.embl.de/events/best-practices-in-research-software-development-python-use-case/)
+  - Contact: [Lisanna Paladin](mailto:lisanna.paladin@embl.de)
 - [University of Oslo](https://www.ub.uio.no/english/courses-events/courses/other/coderefinery/)
 - [Materials Physics Center (CFM)](https://cfm.ehu.es), Donostia - San Sebastian
   - Local in-person groups and local suport: [registration](https://forms.gle/GvN6H1AhXgxKNecc7)
