@@ -1,21 +1,20 @@
 +++
 +++
 
-## Quick Links
-- **[Watch the stream at https://twitch.tv/coderefinery](https://twitch.tv/coderefinery) (shareable).**
-- Open the relevant lesson according to the schedule below (shareable)
-- Collaborative doc (our "chat") is to registered participants (please
-  don't share).
-- [Q&A of each day is archived on this site](questions/) (shareable)
+### Quick Links
+
+- **Watch the stream at [https://twitch.tv/coderefinery](https://twitch.tv/coderefinery)** (shareable)
+- Links to lesson material in the schedule below (shareable)
+- Collaborative document for questions and notes (please register to receive it)
+- Q&A of each day is archived on [this site](questions/) (shareable)
 - [Archive of past communication to participants](communication/) (shareable)
-- Videos on [Twitch for 7
-  days](https://www.twitch.tv/coderefinery/videos) days immediately
-  and [this YouTube
-  playlist before midnight Helsinki time](https://www.youtube.com/playlist?list=PLpLblYHCzJACsZllghoLA4JBMjkTk0eq4).
+- Videos [on Twitch](https://www.twitch.tv/coderefinery/videos) for 7 days immediately
+  and [on YouTube](https://www.youtube.com/playlist?list=PLpLblYHCzJACsZllghoLA4JBMjkTk0eq4) later same day
 
 
 ### News
 
+- Automatic confirmation emails sometimes go to spam. We will email a summary to all registrants before the workshop.
 - March 14: We now also provide a [verification script](https://coderefinery.github.io/installation/#step-1-go-through-the-checklist-and-make-sure-all-items-are-ready)
   to help you check software and configuration
 - March 14: 400 registrations.
