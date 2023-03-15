@@ -39,6 +39,9 @@ navigation = [
 
 twitter_image = "https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png"
 
+# plausible.io analytics
+plausible = { src = "https://plausible.cs.aalto.fi/js/script.js", domain = "coderefinery.github.io", github_ref = "refs/heads/main" }
+
 
 # you can place multiple logos like this
 # the image file(s) need to be placed in content/logos

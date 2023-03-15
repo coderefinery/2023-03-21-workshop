@@ -28,6 +28,12 @@
     {% endif %}
 
     <link href="{{ get_url(path="style.css") }}" rel="stylesheet">
+
+    {% if config.extra.plausible and get_env(name="GITHUB_REF", default="") == config.extra.plausible['github_ref'] %}
+    <script defer data-domain="{{ config.extra.plausible['domain'] }}" src="{{ config.extra.plausible['src'] | safe }}"></script>
+    {% endif %}
+
+
   </head>
 
   <body>
