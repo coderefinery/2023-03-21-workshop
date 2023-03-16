@@ -15,7 +15,7 @@
 ### News
 
 - Automatic confirmation emails sometimes go to spam. We will email a summary to all registrants before the workshop.
-- March 14: We now also provide a [verification script](https://coderefinery.github.io/installation/#step-1-go-through-the-checklist-and-make-sure-all-items-are-ready)
+- March 14: We now also provide a [verification script](https://coderefinery.github.io/installation/#overall-verification)
   to help you check software and configuration
 - March 14: 400 registrations.
 - March 9: Pre-workshop emails sent (you can find them [here](communication/)) and no problem to register after today
