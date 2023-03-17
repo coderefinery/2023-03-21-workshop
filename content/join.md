@@ -145,21 +145,35 @@ aren't perfect.  Our attempts are mentioned below, if you would like
 to help or there is something else we can do, please get in touch.
 
 * Breakout rooms with team leaders gives a community atmosphere
-  and private help.
-* Our material is provided in writing (lesson websites), by voice, and
-  by demo.
+  and private help, even in a big course.
+* Local partners can provide locally-relevant support, both short and
+  long term, without worrying about basic course mechanics.
+* Our material is provided in many different formats: writing (lesson
+  websites), by presenting, videos, Q&A, and more.
 * We record videos and post the notes so you can review at your own
-  pace later on.  Videos don't include audience voice or video.
+  pace later on.  Videos completely preserve privacy (don't include
+  audience voice or video).
+* Raw Twitch videos are available immediately - so you can immediately
+  review anything you didn't catch the first time.  This greatly
+  reduces pressure from the course.
+* We also try very hard to release YouTube videos by the same day, so
+  that they are useful for further-refined instant review (even if
+  they are not perfect).
 * A collaborative document allows everybody to ask questions anonymously and
-  asynchronously, without interrupting others.  On the other hand,
-  there are many questions, so don't let it distract you from
-  the main lecture.
+  asynchronously, without worrying about interrupting others.  (On the
+  other hand, there are many questions, so don't let it distract you
+  from the main flow).  These notes are published for later review.
 * Lesson websites and collaborative document use standard web technologies, so that
-  browser accessibility plugins can be used (for example making the
+  browser accessibility plugins can be used (for example: making the
   font more accessible, check browser extensions).
 * Twitch can be live-captioned using the Google Chrome browser.
 * You can follow along without providing any personal data
-  (registration, Twitch works with cookies blocked).
-* We have figures in some lessons which are somewhat important,
-  without good alt text.  We are working on this, contributions
-  welcome.
+  (without registration to any services, though GitHub registration is
+  used for many exercises).
+* We can share the course attendance with an unlimited number of
+  people.
+* Local sessions with partners and limited global interaction makes
+  Code of Conduct monitoring much easier.
+* We try to make our written material as accessible as possible, both
+  in content and form.  This may not be perfect, but we welcome help
+  to make things better.
