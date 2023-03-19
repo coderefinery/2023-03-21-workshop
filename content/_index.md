@@ -31,9 +31,41 @@ We collect here the exercise groups that we know:
 
 ## Be a team leader
 
-Do you know some of the topics, but want to review them?  
-Why not [attend as a team leader](@/join.md)? 
-Gather some friends who want to learn the topics and follow the workshop together.  
+Do you know some of the topics, but want to review them?
+Why not [attend as a team leader](@/join.md)?
+Gather some friends who want to learn the topics and follow the workshop together.
 You don't need to be an expert: if you have been through CodeRefinery once or have some familiarity
 with the topics, and you are confident to call an expert helper when needed,
 then you have all it takes to lead a team to success.
+
+
+## Instructors
+
+- Radovan Bast
+- Johan Hellsvik
+- Diana Iusan
+- Matias Jääskeläinen
+- Bjørn Lindi
+- Thomas Pfau
+- Dhanya Pushpadas
+- Teemu Ruokolainen
+
+
+## Workshop organizers
+
+- Radovan Bast
+- Richard Darst
+- Enrico Glerean
+- Matias Jääskeläinen
+- Dhanya Pushpadas
+- Samantha Wittke
+
+
+## Expert helpers
+
+- Radovan Bast
+- Johan Hellsvik
+- Diana Iusan
+- Matias Jääskeläinen
+- Dhanya Pushpadas
+- Stephan Smuts
