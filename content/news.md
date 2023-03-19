@@ -1,7 +1,7 @@
 +++
 +++
 
-### Quick Links
+### Summary of important links
 
 - **Watch the stream at [https://twitch.tv/coderefinery](https://twitch.tv/coderefinery)** (shareable)
 - Links to lesson material in the schedule below (shareable)
