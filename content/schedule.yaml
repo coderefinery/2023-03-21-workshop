@@ -26,6 +26,11 @@ schedule:
         ends: 8:00
         title: Connecting time and icebreaker
       - starts: 8:00
+        ends: 8:15
+        title: Welcome and introduction
+        url: https://github.com/coderefinery/workshop-intro
+        presenters: Richard
+      - starts: 8:15
         ends: 11:30
         title: Introduction to version control - part 1/2
         url: https://coderefinery.github.io/git-intro/
@@ -62,17 +67,17 @@ schedule:
         ends: 7:15
         title: Mini-intro
         url: https://github.com/coderefinery/workshop-intro/blob/master/README.md
-        presenters: TBA
+        presenters: Richard
       - starts: 7:15
         ends: 9:15
         title: Reproducible research and FAIR data
         url: https://coderefinery.github.io/reproducible-research/
-        presenters: Radovan and TBA
+        presenters: Radovan and Matias
       - starts: 9:15
         ends: 10:30
         title: Social coding and open software
         url: https://coderefinery.github.io/social-coding/
-        presenters: Radovan and TBA
+        presenters: Radovan and Matias
   - title: "Day 5"
     date: "2023-03-29"
     sessions:
@@ -104,12 +109,12 @@ schedule:
         ends: 10:15
         title: Modular code development
         url: https://coderefinery.github.io/modular-type-along/
-        presenters: Thomas and TBA
+        presenters: Thomas and Radovan
       - starts: 10:15
         ends: 10:30
         title: Concluding remarks and where to go from here
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
-        presenters: TBA
+        presenters: Richard
       - starts: 10:30
         ends: 11:30
         title: Optional - Meet the instructors on Zoom for a chat
