@@ -67,5 +67,6 @@ then you have all it takes to lead a team to success.
 - Johan Hellsvik
 - Diana Iusan
 - Matias Jääskeläinen
+- Jarno Rantaharju
 - Dhanya Pushpadas
 - Stephan Smuts
