@@ -3,11 +3,16 @@
 
 ### News
 
-- March 19: Over 480 persons have registered for the workshop!
+- Day 1 wrap-up:
+  - We covered [git-intro](https://coderefinery.github.io/git-intro/),
+    parts "Motivation, Basics, "branching and merging", and "conflict
+    resolution".  This is the basics of all the rest, so review if you
+    need to (review links above).
+  - We continue with git-intro tomorrow, and show even more advanced
+    and useful things (until we work together on day 3).
+  - Check [install/configuration
+    instructions](https://coderefinery.github.io/installation/) if
+    anything went wrong today.
+  - See you tomorrow!
+
 - Automatic confirmation emails sometimes go to spam. We will email a summary to all registrants before the workshop.
-- March 14: We now also provide a [verification script](https://coderefinery.github.io/installation/#overall-verification)
-  to help you check software and configuration
-- March 9: Pre-workshop emails sent (you can find them [here](communication/)) and no problem to register after today
-- We will not offer CodeRefinery exercise Zoom this time but we will rather focus on supporting self-organized teams and on
-  offering a good workshop experience also for individual learners.
-- March 7: [Install instructions](https://coderefinery.github.io/installation/) are ready (git/github/ssh is most important for week 1)
