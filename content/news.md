@@ -11,10 +11,12 @@
     resolution".  This is the basics of all the rest, so review if you
     need to (review links above).
   - We continue with git-intro tomorrow, and show even more advanced
-    and useful things (until we work together on day 3).  You can join
+    and useful things, like how git is useful for seeing old changes,
+    sharing online, and many more practical things.  You can join
     with no problems tomorrow if you didn't join today (you'll be
     assumed to know the basic git commands we discussed today - review
-    the lesson above for details).
+    the lesson above for details).  Day 3 becomes collaborative, in
+    teams.
   - Check [install/configuration
     instructions](https://coderefinery.github.io/installation/) if
     anything went wrong today.
