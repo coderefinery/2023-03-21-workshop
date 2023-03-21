@@ -28,7 +28,7 @@ schedule:
       - starts: 8:00
         ends: 8:15
         title: Welcome and introduction
-        url: https://github.com/coderefinery/workshop-intro
+        url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
         presenters: Richard
       - starts: 8:15
         ends: 11:30
