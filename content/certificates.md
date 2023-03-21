@@ -34,5 +34,5 @@ provide us with the following three documents via email:
    However any other personal reflection is welcome. Evaluation criteria: we
    expect reflections that are related to the content of each of the six days.
 
-Your submission can then be sent to scip _at_ aalto.fi by the 15th of April and 
+Your submission can then be sent via email to `scip _at_ aalto.fi` by the 15th of April 2023 and 
 you will receive the certificate by the middle of May.
