@@ -4,7 +4,6 @@
     are available to everyone, but may be most useful to the people
     who attended the workshop and want to review later.
 
-
     Playlist: https://www.youtube.com/playlist?list=PLpLblYHCzJACsZllghoLA4JBMjkTk0eq4
 
     Workshop webpage: https://coderefinery.github.io/2023-03-21-workshop/
@@ -114,91 +113,88 @@
 
 
 ##### I commented out the input from the top! -MJ
-#
-#
-#
-## Day 2
-#- input: day2-obs.mkv
-#
-##- output: day2-intro.mkv
-##  title: 2.1 Git intro - conflicts
-##  description: >
-##    The quick introduction to Day 2 and recap from Day 1.
-##  time:
-##    - input: CR_LOGO_30p.mkv
-##    - start: 00:00
-##    - stop: 00:06
-##    - input: day2-obs.mkv
-##    - start: 00:19:23
-##    - 00:21:00: Conflict resolution
-##    - 00:22:29: What is a conflict?
-##    - 00:25:41: "Type-along: Making a conflict"
-##    - stop: 26:00
-##    - input: CR_LOGO_30p.mkv
-##    - start: 00:00
-##    - stop: 00:06
-#
-## Git-intro day 2
-#- output: day2-git-intro-2.mkv
-#  title: 2.2 Git Intro day 2
-#  description: >
-#    Part 2 of the previous video: https://www.youtube.com/watch?v=HkiheYi0QsE&list=PLpLblYHCzJACqaFsfQiCWp0Wqy6qG4iau&index=2
-#
-#
-#    Here, we go over the basics of git from first principles, though
-#    this is not the most basic course you can find.  Previous video:
-#    We covered basics, motivation, making commits, merging, and
-#    staging.  This part 2 video goes into conflict resolution, remotes
-#    and basics of
-#    sharing repositories online, inspecting history, undoing and
-#    recovering, and some practical advice.  However, this does not
-#    cover multi-user work or remotes (that is the next lesson,
-#    git-collaborative).
-#
-#    https://coderefinery.github.io/git-intro/
-#
-#  time:
-#    #- input: CR_LOGO_30p.mov
-#    #- start: 00:00
-#    #- stop: 00:06
-#    - input: day2-obs.mkv
-#    - start: 00:19:23
-#    - 00:21:00: Conflict resolution
-#    - 00:22:29: What is a conflict?
-#    - 00:25:41: "Type-along: Making a conflict"
-#    - 00:42:32: Graphical diff-tools
-#    - 00:44:44: Course takeaway and conflict summary
-#    - end: 00:46:33
-#    - start: 00:47:04
-##    - -: Plan of today
-#    - 00:47:05: Sharing repositories online
-#    - 01:07:00: Permission denied, public key
-#    - 01:08:25: Cloning and deleting a repository
-#    - stop: 01:16:28
-#    - start: 01:34:04
-#    - -: Small clarifications, SSH
-#    - 01:37:28: Inspecting history
-#    - 01:50:48: "Exercises: inspecting history"
-#    - stop: 01:53:34
-#    - start: 02:34:49
-#    - -: Wrap-up of inspecting history
-#    - 02:41:47: Git Bisect
-#    - 02:44:29: Undoing and recovering
-#    - 03:01:11: "Exercises: undoing and recovering"
-#    - stop: 03:03:09
-#    - start: 03:29:05
-#    - -: Recovering from committing to the wrong branch (cherry-pick)
-#    - 03:31:54: How much git is necessary?  What is a good balance?
-#    - 03:41:15: Takeaway from days 1-2
-#    - 03:42:32: Note about ssh keys for tomorrow
-#    - 03:43:02: "Other Q&A, feedback, and final discussion"
-#    - stop: 03:49:34
-#    #- input: CR_LOGO_30p.mov
-#    #- start: 00:00
-#    #- stop: 00:06
-#
-#
-#
+
+
+
+# Day 2
+- input: day2-obs.mkv
+
+
+- output: day2-icebreaker.mkv
+  title: 2.0 Day 2 icebreaker
+  description: >
+    The quick introduction to Day 2 and recap from Day 1.
+  time:
+    #- input: CR_LOGO_30p.mkv
+    #- start: 00:00
+    #- stop: 00:06
+    - input: day2-obs.mkv
+    - start: 00:12:32
+    - -: Icebreaker questions
+    - 00:12:55: How we use git and how did we start?  One teacher's story.
+    - 00:18:57: 'Q&A from icebreaker questions'
+    - 00:20:47: How we use git?  Another teacher's story.
+    - 00:23:48: Another teacher's story
+    - 00:26:22: More discussion
+    - stop: 00:27:57
+    #- input: CR_LOGO_30p.mkv
+    #- start: 00:00
+    #- stop: 00:06
+
+# Git-intro day 2
+- output: day2-git-intro-2.mkv
+  title: 2.1 Git Intro day 2
+  description: >
+    Part 2 of the previous video: https://www.youtube.com/watch?v=SNOjd0j44Hs&list=PLpLblYHCzJACsZllghoLA4JBMjkTk0eq4&index=2
+
+    Here, we go over the basics of git from first principles, though
+    this is not the most basic course you can find.  Previous video:
+    We covered basics, motivation, making commits, merging, and
+    staging.  This part 2 video goes into conflict resolution, remotes
+    and basics of
+    sharing repositories online, inspecting history, undoing and
+    recovering, and some practical advice.  However, this does not
+    cover multi-user work or remotes (that is the next lesson,
+    git-collaborative).
+
+    https://coderefinery.github.io/git-intro/
+
+  time:
+    #- input: CR_LOGO_30p.mov
+    #- start: 00:00
+    #- stop: 00:06
+    - input: day2-obs.mkv
+    - start: 00:27:57
+    - -: § Sharing repositories online
+    - 00:36:56: "Exercise: push recipe to Github."
+    - stop: 00:49:04
+    - start: 01:07:44
+    - -: Questions from exercise
+    - -: § Inspecting history
+    - 01:20:25: "Exercise: inspecting history"
+    - stop: 01:22:47
+    - start: 02:02:03
+    - -: Wrap-up of inspecting history, summary, Q&A
+    - 02:07:06: § Undoing and recovering
+    - 02:16:34: "Exercises: undoing and recovering"
+    - stop: 02:18:01
+    - start: 02:50:36
+    - -: Going over the exercises
+    - 03:01:48: "Summary of the lessons not covered: staging, git under the hood, and configuration"
+    - stop: 03:07:34
+    - start: 03:21:01
+    - -: "§ Practical advice: how much git is necessary?"
+    - 03:31:39: Thoughts from staff, how much git?
+    - 03:42:54: Important preparation for tomorrow
+    - cover: {begin: "03:50:33", end: "03:51:51", w: 840, h: 1080}
+    - 03:52:00: Feedback and other comments, day 2
+    - stop: 03:55:35
+    #- input: CR_LOGO_30p.mov
+    #- start: 00:00
+    #- stop: 00:06
+
+
+
 ### Day 3
 #- input: day3-obs.mkv
 #
