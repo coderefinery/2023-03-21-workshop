@@ -18,6 +18,5 @@
     time to fix before it's important tomorrow!  Check the
     [installation
     instructions](https://coderefinery.github.io/installation/),
-    especially
-    [https://coderefinery.github.io/installation/ssh/#ssh](SSH
-    connection to Github) and verify!
+    especially [SSH connection to GitHub](https://coderefinery.github.io/installation/ssh/)
+    and verify!
