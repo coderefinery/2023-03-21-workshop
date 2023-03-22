@@ -3,6 +3,8 @@
 
 ### News
 
+- Day 3 exercises: We are fine-tuning the setup and will send information
+  to all Wednesday early afternoon CET.
 - Day 1 Q&A has been posted (you can ask follow up questions tomorrow
   during the icebreaker or overnight).
 - Day 1 wrap-up:
