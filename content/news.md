@@ -21,23 +21,3 @@
     especially
     [https://coderefinery.github.io/installation/ssh/#ssh](SSH
     connection to Github) and verify!
-  - (more coming)
-
-- Day 1 wrap-up:
-  - We covered [git-intro](https://coderefinery.github.io/git-intro/),
-    parts "Motivation", "Basics", "Branching and merging", and "Conflict
-    resolution".  This is the basics of all the rest, so review if you
-    need to (review links above).
-  - We continue with git-intro tomorrow, and show even more advanced
-    and useful things, like how git is useful for seeing old changes,
-    sharing online, and many more practical things.  You can join
-    with no problems tomorrow if you didn't join today (you'll be
-    assumed to know the basic git commands we discussed today - review
-    the lesson above for details).  Day 3 becomes collaborative, in
-    teams.
-  - Check [install/configuration
-    instructions](https://coderefinery.github.io/installation/) if
-    anything went wrong today.
-  - See you tomorrow!
-
-- Automatic confirmation emails sometimes go to spam. We will email a summary to all registrants before the workshop.
