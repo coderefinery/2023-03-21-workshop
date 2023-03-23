@@ -3,17 +3,6 @@ template = "page-with-toc.html"
 title = "Questions and notes from workshop day 2"
 +++
 
----
-tags: Workshop-2023-Mar
----
-
-# Archive: CodeRefinery 2023 March
-
-:::info
-* Old questions from the main collaborative document get moved here, when that gets too long
-* Live HackMD is for registred participants.
-:::
-
 ## Icebreaker questions:
 
 Which types of projects can you use git, etc?  Which will you use it for?
@@ -932,4 +921,6 @@ Any other feedback?
     - Approving a pull request does not merge it. It's an optional thing for a workflow where multiple people need to check each pull request. It means you have checked it, but maybe someone else in your team also needs to check. The last one would also merge it.
 
 - Is it possible that setting the conda path environmental variables is why it now takes forever for command prompt/bash windows to open? 
+
+    - Conda can create these kinds of issues sometimes especially when the command `conda init` is run. You should have a file called ".bashrc" in your home folder. You can open it with a text editor and check if conda has added extra commands. You can try commenting those lines (by adding a # at the beginning of each line) and then open a new terminal and see if things get better. We have a longer explanation here https://scicomp.aalto.fi/triton/apps/python-conda/ (expand the box "conda init, conda activate, and source activate").
 
