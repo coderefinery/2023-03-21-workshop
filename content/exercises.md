@@ -36,13 +36,9 @@ We will keep these exercises but **will change the description** so that there i
 
 ### Day 4 (reproducible research and social coding)
 
-(working on it)
-
-- **Working on changing exercises in reproducible research**:
-  - [Recording dependencies](https://coderefinery.github.io/reproducible-research/dependencies/) (20 min): Add R examples.
-  - [Recording computational steps](https://coderefinery.github.io/reproducible-research/workflow-management/): Make it more R-relevant.
-  - [Containers](https://coderefinery.github.io/reproducible-research/environments/): **Rewrite this episode** and add exercise where we discuss a container recipe file
-    and imagine a time travel to 3 years later and discuss problems and solutions.
+- [Dependencies-1 and Dependencies-2](https://coderefinery.github.io/reproducible-research/dependencies/#exercises) (20 min)
+- [Workflow-1 and Workflow-2](https://coderefinery.github.io/reproducible-research/workflow-management/#exercise) (20 min)
+- Rest is collaborative "discussion" in collaborative document and demo
 - No individual/group exercise in the social coding part. We will all participate via collaborative document.
   In other words nothing to prepare for team leads.
 
