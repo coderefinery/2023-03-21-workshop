@@ -72,7 +72,7 @@ https://coderefinery.github.io/reproducible-research/
     - Isn't is a problem for reprodicibility? I mean, using a tool as it is it's easier to cite and to refer to while creating your own version is more complicated. Moreover you should also maintain this version that takes huge effort.
     - Agreed, this could lead to problems with reproducibility. Another aspect is that codes/tools that are developed through often hard and long work might not get used that much for modeling/simulations/calculations for projects that get worked on all the way towards communicating results in a paper. Many codes are underused.
 
-6. Slightly off topic; do you have any environments for python you recommend working in? I currently use jupyter lab on Mac. (+1)
+6. Slightly off topic; do you have any environments for Python you recommend working in? I currently use Jupyter Lab on Mac. (+1)
     - Personally I use VS Code, and I also like Atom. Both are general IDEs with good support for Python. (But I also think the different environments have mostly the same support, so it's a matter of learning one.)
         - Thanks. The ones I've mainly been recommended are Spyder and IDE (but i dont think IDE is available on mac)
             - IDE is just short for integrated development environment, think of a software application that helps you edit/develop your code.
@@ -87,7 +87,7 @@ https://coderefinery.github.io/reproducible-research/
 #### What are your experiences re-running or adjusting a script or a figure you created few months ago?
 - I didn't comment it so much so it was very difficult understanding what the code was doing. It took more time than expected.
 - I had several versions of the script I wanted to use again after 2 years. I didn't know which was the last version. I had to review each one. It took like 3 days (it was a nightmare)
-- For some code I constantly was chaning parameters and it was challenging keeping track of which parameters generated which figure. Another reason for this was that figures took about a week to be ready, so after a week I had already forgoten about the context in which the figures were made. 
+- For some code I constantly was changing parameters and it was challenging keeping to track of which parameters generated which figure. Another reason for this was that figures took about a week to be ready, so after a week I had already forgotten about the context in which the figures were made.
 - I didn't have the license for Matlab any more and had great difficulty obtaining the raw data to process the same data elsewhere. In the end I ended up editing my old figures in pdf format.
 - Terrible, did not know how to make it run again. The script was contructed from other pieces of code found on stackoverflow and too difficult to understand.
 - Something else changed and tests don't work anymore
@@ -100,13 +100,13 @@ https://coderefinery.github.io/reproducible-research/
 - Understanding what they meant and why they did certain steps in the analysis - this was mostly about the code. 
 - The student took a long time to hand over every script because she had to "clean them up" before sending them to me.
 - share experience in a constructive manner
-- I tried to reuse a python package from 10 years ago, it took almost one day to find the right versions of the packages so that the main example worked
+- I tried to reuse a Python package from 10 years ago, it took almost one day to find the right versions of the packages so that the main example worked
 - I had code from a supervisor, it was commented well but they didn't want to explain anything about it. If I asked what is this parameter x that you named in this way they would say shortly 'yea just the parameter x'... well that didn't explain it to me. Still I'm getting questions from them how is this parameter x managed in the code, did you do some quality check for it? But to this day I didn't get explanation what is it so no, I didn't get that QC done on that part... Also the same supervisor wanted me to develop the code further, but at the same time they would want me to not alter the original code ???
 - Knowing where to start trying running the code.
 - Next to impossible :(
 - Missing the proper small tests to cover some basic functions. Hard to run whole program at the beginning
 - The main problem for me was to understand where the output data were saved and changed the path directory of them. I do believe is what you said. The problem is the less communication between people and not coding. Without any information about what the data is about, how the person before us or even when we did the work few years ago, it is important to be provided with information.
-- very difficult code to read, I had to test every line seperatly to see what it does. Took forever and found lots of bugs.
+- very difficult code to read, I had to test every line separately to see what it does. Took forever and found lots of bugs.
 
 
 ### Questions (continued)
@@ -115,7 +115,7 @@ https://coderefinery.github.io/reproducible-research/
    - One git repository per project is the best approach. If a project is big, then subprojects can have their own repository. If you think of academic publications, one project corresponds to one publication.
 
 9. Are there standard files that should be in `.gitignore`?
-   - Depends on what content that goes in the git repo. For a git repo with source code, one typically lists in the `.gitignore` object files and executable that are generated by the compiler. For e.g. Fortran one would like to have `*.mod`, `*.o` in the `.gitignore`. 
+   - Depends on what content that goes in the git repo. For a git repo with source code, one typically lists in the `.gitignore` object files and executables that are generated by the compiler. For e.g. Fortran one would like to have `*.mod`, `*.o` in the `.gitignore`. 
 
 10. Do you know of any version control for HARDWARE developments? (e.g, CAD or PCB designs)
     - If the development is done using text, git works.
@@ -129,7 +129,7 @@ https://coderefinery.github.io/reproducible-research/
 
 
 12. The files that we do not want to track should we then put them in the ./gitignore folder ? 
-    - The ".gitignore" is a text file. There you can specify the types of files you do not want to be tracked by git (e.g. "*.zip")
+    - The `.gitignore` is a text file. There you can specify the types of files you do not want to be tracked by git (e.g. `*.zip`).
 
 
 ### Discussion
@@ -169,7 +169,7 @@ https://coderefinery.github.io/reproducible-research/
 
 13. How to use overleaf with git? I don't use it although use overleaf a lot. Would be nice to know about this.
     - Git is used internally within Overleaf. My personal experience of using the git API of Overleaf is mixed. Things might get confused if some authors are editing directly on Overleaf, whereas others are adding material over the gitAPI.
-        - The versoning may be a premium feature, I am not sure what is available for free.
+        - The versioning may be a premium feature, I am not sure what is available for free.
     - handy links:
         - https://www.overleaf.com/learn/how-to/Using_Git_and_GitHub#.V7NMWLNnthE
         - https://www.overleaf.com/articles/git-and-overleaf-integration/qmdncpnqwfxx
@@ -185,7 +185,7 @@ https://coderefinery.github.io/reproducible-research/
        - ah fun! more to come. I (RB) have the ambition to write a blog post about cooking analogies for everything computing related": parallelization, scheduling, resource use, SIMD, ...
 
 16. If you use code snippets posted online by others, say in stack overflow etc, do you need to cite them? Always feel slightly guilty just using them, but then again my coding journey just began and nothing was published yet (not even close).
-    - We'll actually talk about this in the second lesson of today!  Make sure to raise this qusetion again if it's not answered.
+    - We'll actually talk about this in the second lesson of today!  Make sure to raise this question again if it's not answered.
 
 17. Would like to hear a bit about where things "live" when using Conda. Like what happens under the hood, how do channels work?
     - Good question but might take a while to answer.  Let's see: "channels" are basically a way to organize groups of packages by a single group.  There is a default anaconda channel, but it also allows others to package and distribute what they need.  You can select a particular channel when you install packages with `conda`.
@@ -202,6 +202,7 @@ https://coderefinery.github.io/reproducible-research/
     - Conda-forge is the most common. There are other sources that specialize on different fields or different types of packages.
     - The instructions for conda-forge https://conda-forge.org/docs/maintainer/adding_pkgs.html
     - So, is there a motivation for ever using conda and publish to conda-forge, rather than virtualenv and publish to PyPI?
+      - Both conda-forge and PyPI are viable options for distributing the code. Publishing to both might increase the uptake of the tool.
 
 21. Is Spyder another package that can be used?
      - It's an editor that can do a lot of the similar things, yes.
@@ -234,7 +235,7 @@ https://coderefinery.github.io/reproducible-research/
      - If environment gets messed up, you can re-create it.  Re-creating = ensures it's reproducible later!
          - Then, what is the difference of generating this yml file and generating requirements.txt using pip freeze? (I just realized that pip freeze only works for python venv)
              - If you're working with conda environments, the default is to store dependencis in a file called `environment.yml`. If you work in a python virtual environment, the default is `requirements.txt`.
-                 - silly question, what is the conda environment / python virtual environment?
+                 - silly question, what is the Conda environment / Python virtual environment?
                      - `conda` and `pip` are both package managers for Python. They can both be used to create environments in order to isolate your code from the rest of the system and keep track of dependencies.
                          - Thanks!
 
@@ -245,8 +246,6 @@ https://coderefinery.github.io/reproducible-research/
 
 
 ### Exercises until xx:10, then break until xx:20
-:::info
-Info at the bottom :arrow_down: 
 
 **How was the exercise?**
 * it worked: oo
@@ -255,24 +254,24 @@ Info at the bottom :arrow_down:
 * didn't try:
 * too much time: 
 * didn't realize today started an hour earlier than last week :\ (Daylight Savings?)
-    * Central Europe changed to summer time last weekend.
-::: 
+* Central Europe changed to summer time last weekend.
 
 30. Do we need to do the installation of dependencies for the exercise?
      - For Dependencies-1 you don't need any coding or installation of dependencies.
      - For Dependencies-2 you need the CodeRefinery Conda environment (or your own env)
-        - but even only "reading" Dependencies-2 is hopefully useful. the `conda env export` will create a file similar to the one we see in Dependencies-1 
+        - but even only "reading" Dependencies-2 is hopefully useful. The `conda env export` will create a file similar to the one we see in Dependencies-1 
 
 31. What is a `channel` in relation to Conda, envs, etc.?
      - these are different distribution channels: places where packages are shared.
          - when building, e.g. a Docker container, how do I know about `channels`: which one to use, where to get info about available ones?
+           - When preparing a Docker container you could add channels e.g. conda-forge, similarly to how you work with conda and channels in a terminal.
 
 32. I am not sure how to start the exercise. What exactly do I need to do?
-     - no coding needed for part 1. the goal for exercise 1 is to read A-E and discuss/consider how this affects reuse in future
-     - for part 2: if you are in the activated coderefinery conda environment, I would try to export that environment into a file
+     - No coding needed for part 1. the goal for exercise 1 is to read A-E and discuss/consider how this affects reuse in future
+     - For part 2: if you are in the activated coderefinery conda environment, I would try to export that environment into a file
        - "A: You find a couple of library imports across the code but that’s it." how would I find the libraries?
           - in Python it would be that you find somewhere for instance "import scipy" or "import somelibrary"
-        - what is the coderefinery conda environment?Where can i find it?
+        - what is the coderefinery conda environment? Where can i find it?
         - https://coderefinery.github.io/installation/conda-environment/
 
 33. When in a project is it appropriate to create an `enviroment.yml`? at the start? at version 1? and when should it be updated?
@@ -288,7 +287,7 @@ Info at the bottom :arrow_down:
 35. In the "Dependencies-1" example, should we not specify the python version (e.g. 3.5 or 3.7)?
      - good point! it could definitiely be relevant and can/should be added to `environment.yml` (however, `requirements.txt` has no mechanism for that as far as I know)
 
-36. what is the "coderefinery conda environment"?
+36. what is the "CodeRefinery conda environment"?
     - It is an environment that contains the programs used within this workshop.
     - https://coderefinery.github.io/installation/conda-environment/
         - sorry, we should add a link to it from lesson
@@ -351,8 +350,9 @@ Info at the bottom :arrow_down:
 42. How does Conda know where to get info to perform `conda activate <env_name>`? Is info about these environments stored somewhere?
      - yes, on my computer it keeps a list of all environments in .conda on my home folder
          - I'm on Ubuntu, found ~/.conda dir as well after I typed `conda env export > environment.yml`. But where does `coderefinery` env come from, which is activated magically by `conda activate coderefinery`?
+           - The name of an environment can be specified in the `environment.yml` file, for instance `name: coderefinery`.
 
-43. So I can see I have the coderefinery environment under my Miniconda/envs folder and I see it when I do `conda info -e`. I have put my current environment info a `myownenvironment.yml` file. B`but what has to happen to` myownenvironment.yml so it behaves like the coderefinery environment I can see in my envs folder and so it lists like an available environment I can load?
+43. So I can see I have the coderefinery environment under my Miniconda/envs folder and I see it when I do `conda info -e`. I have put my current environment info a `myownenvironment.yml` file. But what has to happen to` `myownenvironment.yml` so it behaves like the coderefinery environment I can see in my envs folder and so it lists like an available environment I can load?
     - Oh, wait I might have found it. Its the next part of the exercise (facepalm...)
 
 44. It is difficult to understand from which terminal a person needs to run from. There is the `cmd``, the anaconda` one, the `git bash` etc... Should I start with the anaconda terminal?
@@ -417,7 +417,7 @@ Info at the bottom :arrow_down:
     Access is denied." What this means? What should i do?
     - I think you are in a directory where a environment.yml file can't be made, since you don't have permissions to write there.  `C:\`
     - how can I change the directory?
-        - See answer 50
+        - With the command `cd`.
 
 50. Is there some way you can see the previous version of the environments excercise? i liked it better before. :/ I remember there was one awesome excercise where you could try out a bunch of different commands with conda where you kind of put stuff into a yml file, and then creating a new environment from that but then changing it slightly and so forth. 
     - With the power of git, we can!  Easy to see the raw source (for example) here: https://github.com/coderefinery/reproducible-research/blob/2fc3f7cb0a2e03c79ca7420358eecaf9517b0b5f/content/dependencies.md
@@ -428,8 +428,6 @@ Info at the bottom :arrow_down:
         - after i activite the coderefinery environment it is clearly activated (checked by exporting environment.yml), but the asterix isn't shown
         - try `conda info` it tells you various details on the current activated environments (or if nothing is activated)
         - Thanks, that works!
-
-### Break until xx:22
 
 52. I have made the script.sh and put in the repository. I run it using bash script.sh. But there is no output. Shouldnt i see a plot? Should i putpt in data folder? 
     - It saves straight to the data folder and is quiet otherwise.
@@ -477,8 +475,9 @@ Info at the bottom :arrow_down:
     
 58. To create the script.sh file we need to do it from the terminal on Binder, correct? If so, I couldn't use nano, vim or vi there. So how to?
     - Yes. Or some other editor.
-        - That must be on binder? Or can I do it on my folder that I cloned?
+        - That must be on Binder? Or can I do it on my folder that I cloned?
         - Which text editor exists on the terminal inside binder that I can use? I know nano, vim and vi. None of them work, so how can I create the script.sh file?
+           - You can install an editor of choice within the container.
 
 59. I created and ran the script.sh. Now i do git status and i only see the script.sh that is untracked. Why are the plots that i created with the script not there as untracked? They have not been changed?
     - If you did not delete the plots before starting (the repo included them already – maybe that was not mentioned in the script exercise) then the script produces exactly same figures and git considers them unchanged
@@ -507,14 +506,14 @@ Info at the bottom :arrow_down:
          - ah right, thanks! I didn't
      
 65. It is still solving the environment for coderefinery env, haven't been able to do anything more than that.
-      - it takes time to install for the first time but no problem for rest of today. we will need it tomorrow. rest of today will be discussions.
+      - it takes time to install for the first time but no problem for rest of today. We will need it tomorrow. Test of today will be discussions.
 
 66. Can I open the generated images in the terminal?
-    - There are some tools for that but most of them are OS spesific
+    - There are some tools for that but most of them are OS specific.
 
 67. why snake file created empty txt files in plot folder with name of book titles?
 
-68. How do we create a good "REAME" for a snakemake file?
+68. How do we create a good "README" for a snakemake file?
     - Hm. I guess you would comment on what commands to run and what the setup is: can run with snakemake.  Put input files in this place with this format. Run this command, and output appears [here].
 
 69. IG_question! I do `git status` --> `snakemake --delete-all-output` --> `git status` --> `snakemake -j 1` --> `git status`. Why do the 1st & the last calls of `git status` tell there are no changes in the repo? Files were at least updated (actually, removed & created again, and `git` noticed this). `git` doesn't track time evolution of a file in repo if there are no changes in the file size / content?
@@ -527,15 +526,15 @@ Info at the bottom :arrow_down:
     - we're having trouble figuring it out, if we can't by the end of the day might be good to ask someone local who can look at the screen and see the status.
     - we are puzzled by these problems. we are wondering whether it's maybe the wrong terminal open?
     - What operating system are you on?
-        - (I use Windows, and writing in the git bash terminal) I solved it myself by looking bacvk at some of the installation guides - it was working as it should, but i needed an extra command (almost the one you mentioned): "source activate [PATH to Anaconda3]/envs/coderefinery". Thanks for pointing me in the right direction with your suggestions.
+        - (I use Windows, and writing in the git bash terminal) I solved it myself by looking back at some of the installation guides - it was working as it should, but i needed an extra command (almost the one you mentioned): "source activate [PATH to Anaconda3]/envs/coderefinery". Thanks for pointing me in the right direction with your suggestions.
             - Solved now.
 
 71. How to edit the files inside Binder? `nano`, `vim` or `vi` doesn't work. Can you give the names of the tools that we can use to edit the `*.py` files inside Binder?
-    - From the Juptyer file browser you can open and save.
+    - From the Jupyter file browser you can open and save.
         - Thanks. But I was expecting to do it through the terminal.
     - The main question is "what editors does binder install by default" and maybe the answer is "none"... in which case not much to do.
 
-72. from anaconda terminal I activated the code refinery environment, then I tried to "conda env export > environment.yml" and it tells me that it cannot be done. so i started trying with git bash and i have tried to make it work in bash and it still tells me command not found!
+72. from anaconda terminal I activated the coderefinery environment, then I tried to "conda env export > environment.yml" and it tells me that it cannot be done. so i started trying with git bash and i have tried to make it work in bash and it still tells me command not found!
     - you tried activating the code refinery environment in git bash? `conda activate coderefinery`
       - yes, command not found again; still the same
 
@@ -559,7 +558,7 @@ OSError: [Errno 22] Invalid argument
 ### Recording computational environments
 https://coderefinery.github.io/reproducible-research/environments/
 
-75. It sounds like Radovan was talking about what is on his screen without sharing? nvm video was stuck on my end somehow
+75. It sounds like the instructor was talking about what is on his screen without sharing? nvm video was stuck on my end somehow
     - Something a bit strange is going on here... but seems to work overall.
 
 76. I was wondering if the workflow is using some tool like Binder and or depends on some integration with github, it can be unaccessible in the future, right? Is there some way to use containers, dockers that is possible to rely on in the long run? 
@@ -578,7 +577,7 @@ https://coderefinery.github.io/reproducible-research/sharing/
     - Just watch for now, demo.
 
 79. is the full history of the git shown on zenodo when you link the GitHub to a zenodo?
-    - No, it only saves the exact specific versions you archive.  (But you can archive multiple versions, for example each release)
+    - No, it only saves the exact specific versions you archive. But you can archive multiple versions, for example each release.
 
 80. Does Zenodo only work with GitHub? Or other repository platforms are also supported?
     - I think the "automatic integration" may only be Github, but it's not that much harder to upload data from any other source.
@@ -586,7 +585,7 @@ https://coderefinery.github.io/reproducible-research/sharing/
 81. Can I use `git` to conduct control of basically everything between my local machine and a remote one, e.g. a supercomputer where I not only run simulations, but also store data?
     - Yes!  And sync changes on both ends.  The data should probably be managed / synced separate from your main git repo.
         - Was it mentioned last week? I'm asking, since I've been using my own bash script for synchronisation based on rsync with many rules like `--include`, `--exclude`
-            - We mentioned how you can sync between a local repository and a remote repository on GitHUb, we also mentioned that you can define a remote that points somewhere else, but we did not actually show how to do it. But that would be `git remote add origin URL`. Also, instead of the URL you could use a path to some other local repo to be synced with.
+            - We mentioned how you can sync between a local repository and a remote repository on GitHub, we also mentioned that you can define a remote that points somewhere else, but we did not actually show how to do it. But that would be `git remote add origin URL`. Also, instead of the URL you could use a path to some other local repo to be synced with.
                 - I remember about GitHub, GitLab, but I missed the remote storage/synch point. Alright, it's nice that it could be used. For some reason, I forgot about it.
             
             
@@ -608,13 +607,13 @@ https://coderefinery.github.io/social-coding/
 **Choose many**. Vote by adding an `o` character:
 
 - A: Easier to find and reproduce (scientific reproducibility)
-  - votes: oooooooOoooooooooooooooooooooooooooooooooo
+  - votes: oooooooooooooooooooooooooooooooooooooooooo
 
 - B: More trustworthy: others can verify correctness and find and report bugs
-  - votes: ooooOooooooooooooooooooooooooooooo
+  - votes: oooooooooooooooooooooooooooooooooo
 - C: Enables others to build on top of your code
      (derivative work, provided the license allows it)
-  - votes: oooooooOooooooooooooooooooooo
+  - votes: ooooooooooooooooooooooooooooo
   
 - D: Others can submit features/improvements
   - votes: oooooooooooooooooooooo
@@ -638,7 +637,7 @@ https://coderefinery.github.io/social-coding/
   - votes: ooooooooooooooo
 
 - J: You can reuse your own code later after change of job or affiliation
-  - votes: oooooOooooooooooooooooooo
+  - votes: ooooooooooooooooooooooooo
 
 - K: It encourages me to code properly from the start
   - votes: ooooOoooooooooOooooooooooooooo
@@ -650,7 +649,7 @@ https://coderefinery.github.io/social-coding/
     - votes: ooo
 
 
-#### Quesion 2: The most concerning thing for me, If I share my software now
+#### Question 2: The most concerning thing for me, If I share my software now
 
 **Choose 
 - A: It will be scooped (stolen) by someone else
@@ -694,7 +693,7 @@ Free-form answers:
 - Code easier to falsify / find problems with.
 - Professors think code is good when it works once, spending time on commenting etc is a waste of time (+3)
 - Many simply just copy and paste and don't acknowledge the code others developed. I guess this is because for scientific papers the authorship recognition is much more understood that of a random code someone finds on a forum. (+4)
-- Maybe because software citation is still no at par with paper citations for an academic career in many fields (:+2:)
+- Maybe because software citation is still not at par with paper citations for an academic career in many fields (:+2:)
 - I took parts of codes from others and feel like it is not mine. I just combine it. (+3)
 - Not formally "peer-reviewed" in the same way and aren't "novel results" so hard to convince admin it should be valued as academic currency (similar with methods papers being less valued even though long-term contribution may be huge) (+1)
 - Code is a tool, raher then a scientific finding. It has no scientific value by itself. Rather belongs to the Methods section of a paper
@@ -785,7 +784,7 @@ https://coderefinery.github.io/social-coding/licensing/
     - That is always a possibility for anything you upload online.
     - that is not an argument to leave artists completely unprotected in this regard - compare with the music industry.
     - Music is copyrighted, yet people still torrent it. (Or use adblockers.)
-    - That's the point. Music is protected with strict rules against AIs training on it, drawings are not.Visual art is free game.  
+    - That's the point. Music is protected with strict rules against AIs training on it, drawings are not. Visual art is free game.
     - Couldn't a music AI just scrape audio from e.g. YouTube? There's copyrighted stuff there.
     - Possibly- that's why there are serious concerns with AI scraping everything without regulation. 
     - I suppose this is an ideological thing as well: How much does one agree with the existence of copyright in the first place? But that's a bit off topic.
@@ -793,20 +792,20 @@ https://coderefinery.github.io/social-coding/licensing/
     - Agreed - I as a visual artist do not allow it yet I have no control over it and am forced to remove my art from the internet in that case. 
     - There are ethical concerns about AI training materials, but it's not clear/decided yet if it violates copyright. Court cases are coming and decisions may be different in different regions. "Style" is not copyrightable (and shouldn't be - copyrighting "style" would be a disaster for artists)
     - To me there is a big difference between another artist being inspired (who has learned how to draw) versus an ai scraping and people who cannot draw  running away with images that seem to be created by said artist whose work has been scraped. That is disrespectful to the artist to say the least. 
-        - Yes, but that's an ethical stance - ethics and legality are related but not the same, and it's not always possible or desirable to legislate ethics. If "style" becomes copyrightable, entire genres of art are in danger. So I would hesitate to confidently declare that AI training violates copyright while these issues are still legally undecided - calling it "unethical," sure. (Although personally, I think the AI images generally only look like actual artists' work if viewed in tiny thumbnails where it's mostly a color impression - the quality as art is usually...not good)
+        - Yes, but that's an ethical stance - ethics and legality are related but not the same, and it's not always possible or desirable to legislate ethics. If "style" becomes copyrightable, entire genres of art are in danger. So I would hesitate to confidently declare that AI training violates copyright while these issues are still legally undecided - calling it "unethical," sure. (Although personally, I think the AI images generally only look like actual artists' work if viewed in tiny thumbnails where it's mostly a color impression - the quality as art is usually... not good)
 
 87. Are there licenses that claim that linking to libraries constitute derivative work of the linked code? Is it generally safe to assume that linking to libraries is safe for your code's license?
     - Good question and may be beyond us answering.  The GPL license says that linking can be a derivative work, if what you make is very closely connected to the thing you are linking to (has the API guided what you make?).  You are probably too small to worry too much, but worth thinking about if you use GPL libraries.
 
-88. What does it mean, if I write Copyright 2023? How important is it to inlcude a year. Under which conditions should I update the year/year range?
-    - What you decleare (unless you say it's licensed) doesn't matter, still copyrighted.  Having an accurate notice would help if you ever wanted to bring action against someone using your stuff... thus why large companies care so much about this.
+88. What does it mean, if I write Copyright 2023? How important is it to include a year. Under which conditions should I update the year/year range?
+    - What you declare (unless you say it's licensed) doesn't matter, still copyrighted. Having an accurate notice would help if you ever wanted to bring action against someone using your stuff... thus why large companies care so much about this.
 
 89. So If I use the algorithm from a paper and i write a code about it, can I have problems with copyrights? (+1)  
-    - No (which means yes, you can re-write it).  At least that's the line.  You can find many re-implementations because of this.  (if algorithm was patented, which is rare, then it would matter)
+    - No (which means yes, you can re-write it).  At least that's the line.  You can find many re-implementations because of this. (if algorithm was patented, which is rare, then it would matter).
 
 90. What is copyleft?
     - Term invented for "opposite of copyright": if you use my code you *have* to license whatever else you make under the same license.  To keep derivatives free.
-    - legal jujitsu - using the copyright system against itself (in a way) - invented by people who disagreed with copyright... copyleft licenses are 'viral' in that they spread their properties through 'infection' (preventing derivative works from being more strongly licensed)
+    - legal jujitsu - using the copyright system against itself (in a way) - invented by people who disagreed with copyright... copyleft licenses are 'viral' in that they spread their properties through 'infection' (preventing derivative works from being more strongly licensed).
 
 91. what is the difference between the proprietary licenses and open source licenses?
     - proprietary = fully owned, no permissions.  We use it to mean things you can't reuse, modify, share.
@@ -817,8 +816,8 @@ https://coderefinery.github.io/social-coding/licensing/
 93. when you say "you can do" you mean what a person can do using the code that has that specific licence? but he is not the author?
     - Correct. Copyright owner can always do anything since copyright doesn't prohibit them from doing anything.
 
-94. If I create a code with the MIT licence. Hipotetically speaking, someone uses it and creates a software out of it but then the results of the softwares are wrong for some reason. Basically my initial code might have been a wip or something like that. Can he uses the fact that the code does not work properly against me?
-     - Once someone pointed out that most good licenses explicitely say that there is no warranty: that the author can never be heald accountable for anything that may go wrong.  See the last paragraph: https://en.wikipedia.org/wiki/MIT_License.  Yet another reason to use one
+94. If I create a code with the MIT licence. Hypotetically speaking, someone uses it and creates a software out of it but then the results of the softwares are wrong for some reason. Basically my initial code might have been a wip or something like that. Can he uses the fact that the code does not work properly against me?
+     - Once someone pointed out that most good licenses explicitely say that there is no warranty: that the author can never be held accountable for anything that may go wrong.  See the last paragraph: https://en.wikipedia.org/wiki/MIT_License.  Yet another reason to use one
        - ok clear. 
        - edited to make more clear.
 
@@ -827,7 +826,7 @@ https://coderefinery.github.io/social-coding/licensing/
 ### Questions (continued)
 
 95. How about using generative AI in stuff?
-     - Some universities already have guidelines (eg. [Helsinki University](https://studies.helsinki.fi/instructions/article/using-ai-support-learning))
+     - Some universities already have guidelines (e.g. [Helsinki University](https://studies.helsinki.fi/instructions/article/using-ai-support-learning))
      - be critical with whatever is synthesised with these tools. For example the code generated might be protected by a strict license, but GPT or GithubCopilot won't cite the sources (or hallucinate fake sources when asked). There is an open court case against githubcopilot https://githubcopilotlitigation.com/ (and similarly synthetic images might be reproduction of copyrighted pictures, furthermore, personal data about living individuals can be produced with these technologies which can introduce other issues if the synthetic personal data is going to be published)
 
 96. What would a fully attributed code deposit look like? If the programmer referred to 10 tutorials, the documentation, and 25 answers on Stack Overflow...it doesn't seem feasible to keep track of exactly which snippets came from where. Attribution could be longer than the script. Am I missing something?
@@ -847,8 +846,7 @@ https://coderefinery.github.io/social-coding/software-citation/
 
 
 98. IG_question: how to assign a proper number to a version of my software, e.g. 1.2.3 or 1.2? What defines these digits?
-     - It's up to you, but "semantic versioning" is one common guide: https://semver.org/ which says what the three digits should mean.  But "they are just numbers"
-
+     - It's up to you, but "semantic versioning" is one common guide: https://semver.org/ which says what the three digits should mean.  But "they are just numbers".
 
 
 ## Feedback, day 4
