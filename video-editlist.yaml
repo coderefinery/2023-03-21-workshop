@@ -252,83 +252,87 @@
     - stop: 03:59:31
 
 
-### Day 4
-#- input: day4-obs.mkv
-#
-##- output: day4-intro.mkv
-##  title: 4.0 Second week introduction
-##  description: >
-##    The introduction to the second week, where we go into slightly
-##    more detail bout what we will cover this week and how it fits
-##    together.
-##
-##    In short, if last week was about tracking code, this week is about
-##    managing software.
-##  time:
-##    - start: 00:20:04
-##    - end: 00:23:21
-##
-#
-#- output: day4-reproducible-research.mkv
-#  title: 4.1 Reproducible Research
-#  description: >
-#    If you can't get your code to do the same thing again, is it
-#    really science?  Or more practically, are you able to do your
-#    work?  Reproducibilty is a big deal, but we don't always learn how
-#    to do it.  In this lesson, we cover the basics, how to organize
-#    projects, record computational steps with Snakemake or other
-#    workflow managers, how to record environments with conda (and docker
-#    a bit), and sharing code and data (FAIR).
-#
-#    https://coderefinery.github.io/reproducible-research/
-#
-#  time:
-#    - start: 00:33:14
-#    - 00:34:36: Motivation
-#    - 00:41:19: Organizing projects
-#    - 00:51:02: Recording dependencies
-#    - 01:01:09: "Exercise: explore conda a little bit"
-#    - stop: 01:02:12
-#    - start: 01:09:39
-#    - -: "Short Q&A about dependencies"
-#    - stop: 01:14:53
-#    - start: 01:24:32
-#    - 01:24:55: Recording computational steps
-#    - 01:31:55: "Exercise: Snakemake"
-#    - stop: 01:32:33
-#    - start: 01:53:41
-#    - -: "Q&A about the exercise"
-#    - 02:01:01: Recording environments (containers)
-#    - 02:12:32: Sharing code and data
-#    - 02:16:46: Demonstration of Zenodo
-#    - 02:23:03: Summary and conclusions
-#    - stop: 02:30:04
-#
-#- output: day4-social-coding.mkv
-#  title: 4.2 Social coding
-#  description: >
-#    We don't just program for ourselves: we are part of a community.
-#    As scientists, we want to get citations, so how can our software
-#    support this?  Our work is a constant balance between using the
-#    work of others and hoping that others will use our work.  In this
-#    lesson, we talk about the advantages and disadvantages of others
-#    building on our work, and how to support that.
-#
-#    We cover best practices for software/data projects, requirements
-#    for sharing, copyright, licensing, citation, and more.
-#
-#    https://coderefinery.github.io/social-coding/
-#  time:
-#    - start: 02:40:04
-#    - -: Introductions
-#    - 02:44:20: "Initial group discussion"
-#    - 02:46:55: Social coding
-#    - 03:13:38: Licensing
-#    - 03:43:14: Software citation
-#    - 03:53:06: Feedback of the day
-#    - stop: 03:57:41
-##
-##
+## Day 4
+- input: day4-obs.mkv
+
+- output: day4-intro.mkv
+  title: 4.0 Second week icebreaker/introduction
+  description: >
+    The introduction to the second week, where we go into slightly
+    more detail bout what we will cover this week and how it fits
+    together.  There is also a guest to give us an introduction of
+    reproducible research and social coding, which are the topics of
+    today.
+
+    In short, if last week was about tracking code, this week is about
+    managing software.
+  time:
+    - start: 00:12:51
+    - -: Guest talking about reproducibility and science
+    - 00:27:35: Introduction to week 2
+    - end: 00:35:59
+
+
+- output: day4-reproducible-research.mkv
+  title: 4.1 Reproducible Research
+  description: >
+    If you can't get your code to do the same thing again, is it
+    really science?  Or more practically, are you able to do your
+    work?  Reproducibilty is a big deal, but we don't always learn how
+    to do it.  In this lesson, we cover the basics, how to organize
+    projects, record computational steps with Snakemake or other
+    workflow managers, how to record environments with conda (and docker
+    a bit), and sharing code and data (FAIR).
+
+    https://coderefinery.github.io/reproducible-research/
+
+  time:
+    - start: 00:35:59
+    - 00:36:19: Motivation
+    - 00:46:37: Organizing projects
+    - 00:57:47: Recording dependencies
+    - 01:04:54: "Exercise: explore dependency management in conda/Python/R/Matlab"
+    - stop: 01:08:48
+    - start: 01:29:15
+    - -: Exercise discussion
+    - stop: 01:31:17
+    - start: 01:41:31
+    - 01:42:19: Recording computational steps
+    - 01:49:43: "Exercise: Snakemake"
+    - stop: 02:00:32
+    - start: 02:31:19
+    - -: "Q&A and summary about the exercise"
+    - 02:35:30: Recording environments (containers)
+    - 02:37:41: Sharing code and data
+    - 02:39:55: Demonstration of Zenodo
+    - stop: 02:49:58
+
+- output: day4-social-coding.mkv
+  title: 4.2 Social coding
+  description: >
+    We don't just program for ourselves: we are part of a community.
+    As scientists, we want to get citations, so how can our software
+    support this?  Our work is a constant balance between using the
+    work of others and hoping that others will use our work.  In this
+    lesson, we talk about the advantages and disadvantages of others
+    building on our work, and how to support that.
+
+    We cover best practices for software/data projects, requirements
+    for sharing, copyright, licensing, citation, and more.
+
+    https://coderefinery.github.io/social-coding/
+  time:
+    - start: 02:49:58
+    - -: Initial questions
+    - 03:00:52: Licensing
+    - stop: 03:17:26
+    - start: 03:27:23
+    - -: 'Licensing Q&A'
+    - 03:42:00: Software citation
+    - 03:45:48: Feedback of the day
+    - stop: 03:54:14
+
+
 ###- output: day4-outro.mkv
 ###  title: 4.3 Day 4 final remarks
 ###  description: >
