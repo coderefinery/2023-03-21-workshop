@@ -830,7 +830,7 @@ One thing to be improved next time:
 - It feels like some things weren't properly explained in detail, like typical beginner's errors for when pushing and pulling to and from GitHub (something I suppose we should already have learnt, but judging from the amount of people that had problems with it, it seems we didn't learn it well enough)
 - Explain why it is a good idea to do things (+1)
 - Would have been nice to learn more about the individual tools that are connected to make GitHub pages work. I was not sure which entity does what. (sphinx, CI, pages)
-- I definitely would like to have all the basics terms & motivation explained in a better way, more detailed one: why would one need Jupyter lab, git, Sphinx, yaml/yml/json files & etc.(+1), maybe referring to a real cases, and, yes, as mentioned during the 1st day, more activity from the instructors, please, they seem to be to passive when it comes to prouncing words and providing explanations of their actions (+1)
+- I definitely would like to have all the basics terms & motivation explained in a better way, more detailed one: why would one need Jupyter lab, git, Sphinx, yaml/yml/json files & etc., maybe referring to real cases (+1)
 - motivation for using sphinx
     - as a Sphinx newbie, can tell you: to create, e.g. online documentation, html pages, from source files; just like one creates pdf documents from TeX source code
 - The sphinx part could be slower and with more examples on different templates, where to get more tools to customize the content.
