@@ -32,7 +32,6 @@ How did you attend (alone home/work, small group home/work/online, organized gro
   - Switching between alone at home and at work: oooo
   - Partly on train: o
  
-
 ### Icebreaker #3 What would be the ideal format for this course? (e.g. like this, in-person, videos available and scheduled Q&A/mentoring sessions, etc.)
 
   - like this but with some scheduled Q&A/mentoring session one week after the course so that we would have time to test what we learned on our real projects and then ask for help.
@@ -52,7 +51,7 @@ How did you attend (alone home/work, small group home/work/online, organized gro
   - I think it is great as it is now. This Q&A document is a great way of engaging people in discussion. Also those who would rather not make questions in live voice sessions. (+2)
   - I think it is pretty good as it is right now. The biggest issue I have is when there is a problem and you ask a question in the HackMD-chat, but it gets misunderstood and then you have to re-ask the question, and it might be misunderstood again, and then you may be stuck on a particular problem for ever. (If you had a conversation with someone, you could easily tell them if they misunderstand what you're trying to ask) (+1)
 
-## Archive of questions below
+## Questions
 
 ## [Software testing](https://coderefinery.github.io/testing/)
 
@@ -126,7 +125,6 @@ How did you attend (alone home/work, small group home/work/online, organized gro
 14. What is the difference of software testing to unit testing?
     - Unit testing is a type of software testing. Unit testing is when you test a single function, class or similar. (A single unit of the code.)
 
-
 ## [Software testing, concepts](https://coderefinery.github.io/testing/concepts/)
 
 15. Do you think you would understand from the testing function what is wrong in the main function code? (of course if something is wrong in the function)
@@ -144,7 +142,6 @@ How did you attend (alone home/work, small group home/work/online, organized gro
 18. [Here](https://coderefinery.github.io/2023-03-21-workshop/questions/), you have two `Questions and notes from workshop day 4`, and not a single one `Questions and notes from workshop day 5`.
     - Thanks for notifying us. Actually it is published there but both day 5 and day 4 reads as day4. We will fix this.
     - Fixed [Here](https://coderefinery.github.io/2023-03-21-workshop/questions/).
-
 
 ## [Software testing, testing locally](https://coderefinery.github.io/testing/pytest/)
 
@@ -583,7 +580,6 @@ https://aaltoscicomp.github.io/python-for-scicomp/data-visualization/
 We will paste a Zoom here that you can join to talk to the instructors, after we are done.
 - We hope that you had a good workshop and we got you started on a good path.  There is so much more to learn, and we hope you can keep working.
 
-
 Today was (multi-choice):
 - too fast: oo
 - too slow: o
@@ -595,13 +591,11 @@ Today was (multi-choice):
 - needed more exercise time: o
 - needed less exercise time: 
 
-
 For the course (multi-choice):
 - I learned things I will use: oooooooooooooooooooooooo
 - I would recommend this to others: ooooooooooooooooooooo
 - I should have taken this earlier: ooooooooooooo
 - I shouldn't have taken this earlier:
-
 
 One good thing about today / this course:
 - That automatic debugging tool in GitHub seemed very cool and useful! (+2)
@@ -640,8 +634,6 @@ Any other comments:
 - Do you have more courses during summer which also provides study credits?
 - What should we do next as a participant in Finland to get the course credits?
 
-
-
 Suggestions about the course format:
 
 - Maybe add Zoom-help in the breaks (or at some other point)? Some problems were really hard to solve in the chat, verbal communication was needed.
@@ -650,7 +642,6 @@ Suggestions about the course format:
 - It would be great to have compact cheat sheets for material from earlier days (e.g. how to push things correctly to GitHub, how to use branches, ...) that is used again in later lessons. It is kind of difficult to find this type of info quickly while working on a problem. (+4)
 - I think it worked great the way it was. Thank you so much for this! Would just love to have a mentoring/help session in a few weeks so could have time to test these things on our real projects.
 - The code checkpoints in the examples were a great idea. As in, newbie students who accidentally broke something git-wise, could catch up to the main workshop by cloning working checkpoint examples. (+1)
-
 
 - I'm still confused about who we are supposed to email for the certificate? (I am from the University of Helsinki) I've got the instructions of the "homework" but it just says return via email?
     - On the website it's written: Your submission can then be sent via email to scip@aalto.fi by the 15th of April 2023 and you will receive the certificate by the middle of May.
