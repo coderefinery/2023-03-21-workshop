@@ -354,42 +354,44 @@
     - stop: 00:25:15
 
 
-#- output: day5-jupyter.mkv
-#  title: 5.1 Jupyter
-#  description: >
-#    This lesson teachs learners the user interface of JupyterLab, how
-#    Jupyter notebooks work, and what some common and powerful usecases
-#    are. Our focus is to demonstrate and discuss and guide towards
-#    good practices for reproducibility, collaboration, and
-#    reusability. The emphasis of this lesson is to demonstrate how to
-#    use notebooks in combination with version control and how to share
-#    reproducible notebooks via Binder.
-#
-#    This lesson demonstrates the use of JupyterLab, nbdime,
-#    jupyterlab-git, and Binder.
-#
-#    https://coderefinery.github.io/jupyter/
-#  time:
-#    - start: 00:25:52
-#    - -: Introduction to topics
-#    - 00:28:28: Introduction to Jupyter
-#    - 00:39:10: "Demo: Starting Jupyter Lab"
-#    - 00:40:57: Continuing with Jupyter lesson
-#    - 00:45:16: Tools for writing, testing and debugging code
-#    - 00:48:40: First Computational Notebook and Exercise
-#    - stop: 00:50:09
-#    - start: 01:09:20
-#    - -: Back from Exercise, Questions
-#    - 01:11:43: Notebooks and version control
-#    - 01:16:21: "Demo: version control in Jupyter"
-#    - end: 01:28:53
-#    - start: 01:40:18
-#    - -: Sharing notebooks and Binder exercise
-#    - end: 01:48:46
-#    - start: 02:09:04
-#    - -: Summary
-#    - stop: 02:11:24
-#
+- output: day5-jupyter.mkv
+  title: 5.1 Jupyter
+  description: >
+    This lesson teachs learners the user interface of JupyterLab, how
+    Jupyter notebooks work, and what some common and powerful usecases
+    are. Our focus is to demonstrate and discuss and guide towards
+    good practices for reproducibility, collaboration, and
+    reusability. The emphasis of this lesson is to demonstrate how to
+    use notebooks in combination with version control and how to share
+    reproducible notebooks via Binder.
+
+    This lesson demonstrates the use of JupyterLab, nbdime,
+    jupyterlab-git, and Binder.
+
+    https://coderefinery.github.io/jupyter/
+  time:
+    - start: 00:25:57
+    #- -: Introduction to topics
+    #- 00:28:28: Introduction to Jupyter
+    #- 00:39:10: "Demo: Starting Jupyter Lab"
+    #- 00:40:57: Continuing with Jupyter lesson
+    #- 00:45:16: Tools for writing, testing and debugging code
+    #- 00:48:40: First Computational Notebook and Exercise
+    - stop: 00:55:01
+    - start: 01:14:42
+    #- -: Back from Exercise, Questions
+    #- 01:11:43: Notebooks and version control
+    #- 01:16:21: "Demo: version control in Jupyter"
+    - stop: 01:36:16
+    - start: 01:46:34
+    - stop: 01:47:55
+    - start: 02:04:10
+    #- -: Sharing notebooks and Binder exercise
+    #- end: 01:48:46
+    #- start: 02:09:04
+    #- -: Summary
+    - stop: 02:07:35
+
 - output: day5-documentation.mkv
   title: 5.2 Documentation
   description: >
@@ -439,110 +441,110 @@
 ##  time:
 ##    - start: 03:45:28
 ##    - stop: 03:46:23
-#
-#
-#
-#- input: day6-obs.mkv
-#
-###- output: day6-intro.mkv
-###  title: Day 6 intro
-###  description: >
-###    The quick introduction to Day 6.
-###  time:
-###    - start: 15:47
-###    - end: 19:10
-##
-##
-##
-#- output: day6-testing.mkv
-#  title: 6.1 Software Testing
-#  description: >
-#    Software testing is a fundamental part of modern software
-#    development, and especially important for science since results
-#    should be correct.  Luckily, it's not so hard to get started, and
-#    anyone can do it. This is a crash course for scientists to get
-#    started testing their software.
-#
-#    Tools covered include concepts of testing for science, unit
-#    testing, pytest, continuous integration, and GitHub actions.  We
-#    make demos in Python, but have examples in other languages and
-#    this will apply to every language in some form.
-#
-#    https://coderefinery.github.io/testing/
-#
-#  editlist:
-#    - start: 00:22:28
-#    - 00:22:41: Motivation
-#    - 00:33:56: Concepts
-#    - 00:41:13: Testing locally
-#    - 00:41:46: "Exercise: testing locally with pytest"
-#    - stop: 00:42:58
-#    - start: 01:00:07
-#    - -: "Q&A"
-#    - stop: 01:04:52
-#    - start: 01:14:57
-#    - 01:16:55: Automated testing and continuous integration with Github Actions
-#    - 01:42:46: "Test design and final Q&A"
-#    - stop: 01:44:53
-#    - start: 01:59:33
-#    - stop: 02:09:06
-#
-#
-#
-#- output: day6-modular-code-development.mkv
-#  title: 6.2 Modular Code Development
-#  description: >
-#    In this live-coding demo session we take a Python script as
-#    starting point which reads data, computes simple statistics, and
-#    generates a plot. Together we then improve this code based on
-#    suggestions from the audience to arrive at a more reusable code
-#    with reusable components. We start in the Jupyter notebook, later
-#    move to a Python script/module, introduce testing, and finally
-#    introduce and motivate a command line interface to our code.
-#
-#    In this demonstration we use JupyterLab, Python, Pandas,
-#    Matplotlib, pytest, and Click.  It is also a great demonstration
-#    of pair programming.
-#
-#    https://coderefinery.github.io/modular-type-along/
-#  time:
-#    - start: 02:18:54
-#    - 02:19:34: Starting questions discussion
-#    - 02:22:42: Learning outcomes
-#    - 02:29:20: "Demo begins: introduction to our task"
-#    - 02:32:01: Starting in a Jupyter notebook
-#    - 02:35:21: Downloading the data
-#    - 02:36:59: More Jupyter now that we have the data
-#    - 02:38:47: Running multiple times with a loop
-#    - 02:46:25: Splitting up into smaller functions
-#    - stop: 02:59:15
-#    - start: 03:09:36
-#    - -: "Summary so far and Q&A on pure functions and many small functions"
-#    - 03:15:44: Move out of notebook to executable files
-#    - 03:19:47: requirements.txt to list dependencies and create virtual environment
-#    - 03:23:07: Testing
-#    - 03:25:37: Add a main function (... and continue testing)
-#    - 03:27:10: More version control and .gitignore
-#    - 03:28:23: Command line interface for more parameters
-#    - 03:36:53: Benefits of the command line interface
-#    - 03:39:05: What's next / more ideas
-#    - stop: 03:40:58
-#
-#
-#
-#- output: day6-outro.mkv
-#  title: 6.3 Workshop outro
-#  description: >
-#      The concluding remarks of the workshop.
-#
-#      Outro presentation (will be updated in the future):
-#      https://github.com/coderefinery/workshop-outro/blob/master/README.md
-#
-#  time:
-#    - start: 03:41:27
-#    - -: Concluding remarks and where to go.
-#    - 03:49:15: Looking over feedback and final questions
-#    - stop: 03:49:59
-#    - start: 03:50:45
-#    - -: Final thoughts on the workshop and what we will do next time
-#    - stop: 03:55:32
+
+
+
+- input: day6-obs.mkv
+
+- output: day6-intro.mkv
+  title: 6.0 Day 6 intro
+  description: >
+    The quick introduction to Day 6.
+  time:
+    - start: 00:11:34
+    - end: 00:22:14
+
+
+
+- output: day6-testing.mkv
+  title: 6.1 Software Testing
+  description: >
+    Software testing is a fundamental part of modern software
+    development, and especially important for science since results
+    should be correct.  Luckily, it's not so hard to get started, and
+    anyone can do it. This is a crash course for scientists to get
+    started testing their software.
+
+    Tools covered include concepts of testing for science, unit
+    testing, pytest, continuous integration, and GitHub actions.  We
+    make demos in Python, but have examples in other languages and
+    this will apply to every language in some form.
+
+    https://coderefinery.github.io/testing/
+
+  editlist:
+    - start: 00:22:14
+    - 00:24:51: § Motivation
+    - 00:42:45: § Concepts
+    - 00:51:00: § Testing locally (with exercise)
+
+    #- : "Exercise: testing locally with pytest"
+    - stop: 00:55:31
+    - start: 01:11:06
+    - -: "Q&A"
+    - stop: 01:12:02
+    - start: 01:22:09
+
+    - 01:24:06: Automated testing and continuous integration with Github Actions
+    - stop: 01:37:31
+    - start: 01:57:18
+
+    - 02:00:44: "Test design and final Q&A"
+    - 02:09:03: Conclusions and recommendations
+    - stop: 02:12:28
+
+
+- output: day6-modular-code-development.mkv
+  title: 6.2 Modular Code Development
+  description: >
+    In this live-coding demo session we take a Python script as
+    starting point which reads data, computes simple statistics, and
+    generates a plot. Together we then improve this code based on
+    suggestions from the audience to arrive at a more reusable code
+    with reusable components. We start in the Jupyter notebook, later
+    move to a Python script/module, introduce testing, and finally
+    introduce and motivate a command line interface to our code.
+
+    In this demonstration we use JupyterLab, Python, Pandas,
+    Matplotlib, pytest, and Click.  It is also a great demonstration
+    of pair programming.
+
+    https://coderefinery.github.io/modular-type-along/
+  time:
+    - start: 02:22:22
+    - 02:24:23: Starting questions discussion
+
+    #- 02:22:42: Learning outcomes
+    - 02:29:10: "Demo begins: introduction to our task"
+    - 02:30:12: Starting in a Jupyter notebook
+    #- 02:35:21: Downloading the data
+    #- 02:36:59: More Jupyter now that we have the data
+    - 02:33:48: Running multiple times with a loop
+    - 02:36:18: Splitting up into smaller functions
+
+    #- -: "Summary so far and Q&A on pure functions and many small functions"
+    - 02:50:33: Separate module for reading data
+    - 02:57:34: Gitignore stuff
+    - 02:59:47: Splitting to different cells
+    - stop: 03:06:46
+    - start: 03:16:46
+    - -: requirement.txt for dependencies
+    - 03:18:46: Adding tests
+    - 03:34:16: command line interface
+    - stop: 03:42:55
+
+
+- output: day6-outro.mkv
+  title: 6.3 Workshop outro
+  description: >
+      The concluding remarks of the workshop.
+
+      Outro presentation (will be updated in the future):
+      https://github.com/coderefinery/workshop-outro/blob/master/README.md
+
+  time:
+    - start: 03:42:55
+    - -: Concluding remarks and where to go.
+
+    - 03:50:36: Final feedback and musings on the course, where to go next.
+    - stop: 03:58:37
