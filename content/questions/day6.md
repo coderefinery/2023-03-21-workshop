@@ -73,7 +73,7 @@ How did you attend (alone home/work, small group home/work/online, organized gro
 
 3. Got a small question about last days Sphinx stuff. Where should I ask, here or does it go somewhere else?
     - Here is OK.
-    - If the dir structure is one with `docs` and one with `src`, and in `src` I have a `file.ipynb` that I want to show in my sphinx doc (which is now in `docs`). Do you have an example showing such use case? ([Here](https://github.com/engeir/cr-binder-example) is an example where all files are in `root`, which works, but that I would ideally split up into two folders/directories.) -OP
+    - If the dir structure is one with `docs` and one with `src`, and in `src` I have a `file.ipynb` that I want to show in my sphinx doc (which is now in `docs`). Do you have an example showing such use case? (here: (github repo) is an example where all files are in `root`, which works, but that I would ideally split up into two folders/directories.) -OP
       - Personally I think that a "good" directory structure depends on the project. Then again I am not a developer.
       - I cannot find an example but assuming you are using the "autodoc" extension to generate documentation from docstrings, then you can refer to "src" in your doc/conf.py like this: `sys.path.insert(0, os.path.abspath('../src'))``
       - Right, I found the same, but were not able to get it to work as expected, so I wasn't sure if it was really possible/intended use. -OP
