@@ -55,7 +55,7 @@ registration_link = "https://indico.neic.no/e/coderefinery-march-2023"
 source_repo = "https://github.com/coderefinery/2023-03-21-workshop"
 
 # uncomment as soon as registration opens
-registration_is_open = true
+# registration_is_open = true
 
 # uncomment as soon as registration closes
-# registration_is_closed = true
+registration_is_closed = true
