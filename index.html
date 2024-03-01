@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CodeRefinery workshop March 21-23 and 28-30, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css" integrity="sha256-f3SVFXP30MgahZ0Z7Lp1W02MuLgtiAtk8uFqTbGxNfY=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js" integrity="sha256-gHEvLzvpjU93VFTgu5myAgmc+0I1CzBzYe0YhTJ8uqI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js" integrity="sha256-PxrcCuBlFkPVlPsGxNzt59W3EKYOH79z+v/tq9uFS2M=" crossorigin="anonymous"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-03-21-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery</title>
+      <meta name="twitter:title" content="CodeRefinery workshop March 21-23 and 28-30, 2023" />
+      <meta property="og:title" content="CodeRefinery workshop March 21-23 and 28-30, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - targeted towards researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - targeted towards researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - targeted towards researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-03-21-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <div class="uk-margin-small-bottom" uk-grid>
+    <div class="uk-width-expand@m">
+      <h1>CodeRefinery workshop March 21-23 and 28-30, 2023</h1>
+    </div>
+    <div class="uk-width-1-3@m">
+      
+  
+  <a href="https:&#x2F;&#x2F;coderefinery.org&#x2F;" target="_blank">
+    <img src="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;processed_images&#x2F;coderefinery.e6223832fa8c29d5.png" alt="CodeRefinery logo"/>
+  </a>
+
+
+    </div>
+  </div>
+
+  <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light uk-margin-large-bottom">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        
+<h3 id="summary-of-important-links">Summary of important links</h3>
+<ul>
+<li><strong>Watch the stream at <a rel="noopener" target="_blank" href="https://twitch.tv/coderefinery">https://twitch.tv/coderefinery</a></strong> (shareable)</li>
+<li>Links to lesson material in the schedule below (shareable)</li>
+<li>Collaborative document for questions and notes (please register to receive it)</li>
+<li>Q&amp;A of each day is archived on <a href="https://coderefinery.github.io/2023-03-21-workshop/links/questions/">this site</a> (shareable)</li>
+<li><a href="https://coderefinery.github.io/2023-03-21-workshop/links/communication/">Archive of past communication to participants</a> (shareable)</li>
+<li>Videos <a rel="noopener" target="_blank" href="https://www.twitch.tv/coderefinery/videos">on Twitch</a> for 7 days immediately
+and <a rel="noopener" target="_blank" href="https://www.youtube.com/playlist?list=PLpLblYHCzJACsZllghoLA4JBMjkTk0eq4">on YouTube</a> later same day</li>
+</ul>
+
+
+      </div>
+      <div class="uk-width-expand@m">
+        
+<h3 id="news">News</h3>
+<ul>
+<li>Day 5 news / prep for day 6:
+<ul>
+<li>We covered the things on the schedule: Jupyter and Documentation.
+Overall, it went well, though there are a few things to read
+yourself later.</li>
+<li>Today seemed to have the most problems getting things to work.
+Perhaps this is expected, because it had both Git usage (pushing
+to Github, making repositories, and so on) and the conda
+environment.  We didn't have time to go over all of these in
+detail again today (we tried to earlier or in the install
+instructions), so we recommend you talk with local partners or
+other support to work out these things.</li>
+<li>Day 5 is a really cool day, where we go over testing (a very
+useful lesson that connects everything together), and modular code
+development, a fun way to watch a whole project be built and
+slowly adopt better practices.</li>
+</ul>
+</li>
+</ul>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div uk-grid>
+    <div class="uk-width-1-2@m">
+      <h2>Registration</h2>
+
+
+
+
+  <button class="uk-button uk-button-danger uk-button-large">
+    Registration is closed
+  </button>
+
+
+
+
+
+<p><strong>There is no deadline</strong> and you are welcome to register and join even after
+the event started.</p>
+<p><strong>You can attend just those days you want</strong> but please register anyway!<br />
+Skip the lessons you already know or don't fit you schedule.
+For the days you cannot attend but would like to learn check the lesson material (links in the schedule below).</p>
+<p><strong>Before signing up</strong> please also read <a href="https://coderefinery.github.io/2023-03-21-workshop/registration/requirements/#privacy-and-tools-online-services">this privacy note about tools/services
+we use</a>.</p>
+<p><strong>If you want to join as organization</strong> to provide local helpers or in-person
+sessions, please do!  This usually takes the form of a &quot;watching party&quot; with
+coordinated breaks for exercises.  You can manage that on your own but all
+participants should still register with us individually so that they get all
+necessary practical information and support.</p>
+<p><strong>Should all in a team sign up? Or only one person?</strong> We recommend that all
+register so that they get all necessary information. Team leads for local
+exercise groups can select &quot;I am attending a local exercise room&quot; and &quot;I might
+be interested in being a team leader&quot;.</p>
+
+
+      <script>
+  dayjs.extend(window.dayjs_plugin_utc)
+</script>
+
+<h2>Schedule</h2>
+
+<div class="uk-alert-danger" uk-alert>
+  <a class="uk-alert-close" uk-close></a>
+  <p>
+    All times are displayed in the local timezone of your browser.
+    Detected timezone offset compared to UTC: 
+  <script>
+    var date = '2023-03-20';
+    var time = '09:00';
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('Z'));
+  </script>
+
+  </p>
+</div>
+
+<div class="uk-alert-info" uk-alert>
+  <a class="uk-alert-close" uk-close></a>
+  <p>
+    <b>Breaks</b>: 10 minutes every hour, between xx:50 and xx:10, but it is
+    difficult for us to indicate exactly when.
+  </p>
+</div>
+
+<table class="uk-table uk-table-small uk-table-justify">
+  <tbody>
+    
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Installation help and on-boarding</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-14';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-14';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-14';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              On-boarding for team leads
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-14';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-14';
+    var time = '12:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-14';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Installation help for everybody
+            
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Installation help and on-boarding (you don&#x27;t need to attend both days, choose the day that is better for you)</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-15';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-15';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-15';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              On-boarding for team leads
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-15';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-15';
+    var time = '12:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-15';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Installation help for everybody
+            
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 1</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '7:50';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Connecting time and icebreaker
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '8:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '8:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;workshop-intro&#x2F;blob&#x2F;master&#x2F;livestream.md" target="_blank">Welcome and introduction</a>
+            
+            
+              (Richard)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '8:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-21';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;git-intro&#x2F;" target="_blank">Introduction to version control - part 1&#x2F;2</a>
+            
+            
+              (Diana and Bjørn)
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 2</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-22';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-22';
+    var time = '7:50';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-22';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Connecting time and icebreaker
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-22';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-22';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-22';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;git-intro&#x2F;" target="_blank">Introduction to version control - part 2&#x2F;2</a>
+            
+            
+              (Diana and Bjørn)
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 3</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-23';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-23';
+    var time = '7:50';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-23';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Connecting time and icebreaker
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-23';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-23';
+    var time = '8:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-23';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;git-collaborative&#x2F;" target="_blank">Collaborative distributed version control</a>
+            
+            
+              (Dhanya and Radovan)
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 4</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '6:50';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Connecting time and icebreaker
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '7:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '7:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;workshop-intro&#x2F;blob&#x2F;master&#x2F;README.md" target="_blank">Mini-intro</a>
+            
+            
+              (Richard)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '9:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '7:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '9:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;reproducible-research&#x2F;" target="_blank">Reproducible research and FAIR data</a>
+            
+            
+              (Radovan and Matias)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '9:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-28';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;social-coding&#x2F;" target="_blank">Social coding and open software</a>
+            
+            
+              (Radovan and Matias)
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 5</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '6:50';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Connecting time and icebreaker
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '8:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '8:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;jupyter&#x2F;" target="_blank">Jupyter</a>
+            
+            
+              (Johan and Teemu)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '8:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-29';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;documentation&#x2F;" target="_blank">Documentation</a>
+            
+            
+              (Bjørn and Johan)
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 6</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '6:50';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Connecting time and icebreaker
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '8:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '7:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '8:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;testing&#x2F;" target="_blank">Software testing</a>
+            
+            
+              (Thomas and Teemu)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '9:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;modular-type-along&#x2F;" target="_blank">Modular code development</a>
+            
+            
+              (Thomas and Radovan)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;workshop-outro&#x2F;blob&#x2F;master&#x2F;README.md" target="_blank">Concluding remarks and where to go from here</a>
+            
+            
+              (Richard)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '10:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-03-30';
+    var time = '11:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Optional - Meet the instructors on Zoom for a chat
+            
+            
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+    </div>
+    <div class="uk-width-1-2@m">
+      <h2 id="partners-and-local-exercise-groups">Partners and local exercise groups</h2>
+<p>Some partners offer local support, such as breakout rooms, to their local
+teams. You can <a rel="noopener" target="_blank" href="https://coderefinery.org/organization/partners/">become a partner</a> to
+support your community!</p>
+<p>We collect here the exercise groups that we know:</p>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://scicomp.aalto.fi/"><strong>Aalto University</strong></a>:
+<ul>
+<li>Local in-person exercise session and local support.</li>
+<li>Possibility of <a href="https://coderefinery.github.io/2023-03-21-workshop/certificates/">credit points</a> to those in Finland.</li>
+</ul>
+</li>
+<li>TU Delft
+<ul>
+<li><a rel="noopener" target="_blank" href="https://www.tudelft.nl/en/events/2023/library/coderefinery-workshops-i">Registration Week 1</a></li>
+<li><a rel="noopener" target="_blank" href="https://www.tudelft.nl/en/events/2023/library/coderefinery-workshops-ii">Registration Week 2</a></li>
+</ul>
+</li>
+<li>VU Amsterdam
+<ul>
+<li><a rel="noopener" target="_blank" href="https://vu.nl/en/events/2023/workshops-coderefinery">Registration</a></li>
+</ul>
+</li>
+<li>EMBL, <a rel="noopener" target="_blank" href="https://bio-it.embl.de/">Bio-IT</a>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://bio-it.embl.de/events/version-control-with-git-git-embl-de-git-week-basic-module-2/">Registration Week 1</a></li>
+<li><a rel="noopener" target="_blank" href="https://bio-it.embl.de/events/best-practices-in-research-software-development-python-use-case/">Registration Week 2</a></li>
+<li>Contact: <a href="mailto:lisanna.paladin@embl.de">Lisanna Paladin</a></li>
+</ul>
+</li>
+<li><a rel="noopener" target="_blank" href="https://www.ub.uio.no/english/courses-events/courses/other/coderefinery/">University of Oslo</a></li>
+<li><a rel="noopener" target="_blank" href="https://cfm.ehu.es">Materials Physics Center (CFM)</a>, Donostia - San Sebastian
+<ul>
+<li>Local in-person groups and local suport: <a rel="noopener" target="_blank" href="https://forms.gle/GvN6H1AhXgxKNecc7">registration</a></li>
+</ul>
+</li>
+<li>DTU Biosustain
+<ul>
+<li>Local in-person group in <a rel="noopener" target="_blank" href="https://www.biosustain.dtu.dk/">Novo Nordisk Foundation Center for Biosustainability</a>, Kemitorvet, Building 220, 2800 Kgs. Lyngby</li>
+<li>Contact: <a rel="noopener" target="_blank" href="https://orbit.dtu.dk/en/persons/ding-he">Ding He</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="be-a-team-leader">Be a team leader</h2>
+<p>Do you know some of the topics, but want to review them?
+Why not <a href="https://coderefinery.github.io/2023-03-21-workshop/join/">attend as a team leader</a>?
+Gather some friends who want to learn the topics and follow the workshop together.
+You don't need to be an expert: if you have been through CodeRefinery once or have some familiarity
+with the topics, and you are confident to call an expert helper when needed,
+then you have all it takes to lead a team to success.</p>
+<h2 id="instructors">Instructors</h2>
+<ul>
+<li>Radovan Bast</li>
+<li>Johan Hellsvik</li>
+<li>Diana Iusan</li>
+<li>Matias Jääskeläinen</li>
+<li>Bjørn Lindi</li>
+<li>Thomas Pfau</li>
+<li>Dhanya Pushpadas</li>
+<li>Teemu Ruokolainen</li>
+</ul>
+<h2 id="workshop-organizers">Workshop organizers</h2>
+<ul>
+<li>Radovan Bast</li>
+<li>Richard Darst</li>
+<li>Enrico Glerean</li>
+<li>Matias Jääskeläinen</li>
+<li>Dhanya Pushpadas</li>
+<li>Samantha Wittke</li>
+</ul>
+<h2 id="expert-helpers">Expert helpers</h2>
+<ul>
+<li>Radovan Bast</li>
+<li>Johan Hellsvik</li>
+<li>Diana Iusan</li>
+<li>Matias Jääskeläinen</li>
+<li>Jarno Rantaharju</li>
+<li>Dhanya Pushpadas</li>
+<li>Stephan Smuts</li>
+</ul>
+
+    </div>
+  </div>
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github"></a>
+      </li>
+      <li>
+       <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-03-21-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

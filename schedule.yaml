@@ -1,0 +1,120 @@
+---
+# all times must be input in UTC, be careful about daylight saving
+schedule:
+  - title: "Installation help and on-boarding"
+    date: "2023-03-14"
+    sessions:
+      - starts: 11:00
+        ends: 12:00
+        title: On-boarding for team leads
+      - starts: 12:30
+        ends: 14:00
+        title: Installation help for everybody
+  - title: "Installation help and on-boarding (you don't need to attend both days, choose the day that is better for you)"
+    date: "2023-03-15"
+    sessions:
+      - starts: 11:00
+        ends: 12:00
+        title: On-boarding for team leads
+      - starts: 12:30
+        ends: 14:00
+        title: Installation help for everybody
+  - title: "Day 1"
+    date: "2023-03-21"
+    sessions:
+      - starts: 7:50
+        ends: 8:00
+        title: Connecting time and icebreaker
+      - starts: 8:00
+        ends: 8:15
+        title: Welcome and introduction
+        url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
+        presenters: Richard
+      - starts: 8:15
+        ends: 11:30
+        title: Introduction to version control - part 1/2
+        url: https://coderefinery.github.io/git-intro/
+        presenters: Diana and Bjørn
+  - title: "Day 2"
+    date: "2023-03-22"
+    sessions:
+      - starts: 7:50
+        ends: 8:00
+        title: Connecting time and icebreaker
+      - starts: 8:00
+        ends: 11:30
+        title: Introduction to version control - part 2/2
+        url: https://coderefinery.github.io/git-intro/
+        presenters: Diana and Bjørn
+  - title: "Day 3"
+    date: "2023-03-23"
+    sessions:
+      - starts: 7:50
+        ends: 8:00
+        title: Connecting time and icebreaker
+      - starts: 8:00
+        ends: 11:30
+        title: Collaborative distributed version control
+        url: https://coderefinery.github.io/git-collaborative/
+        presenters: Dhanya and Radovan
+  - title: "Day 4"
+    date: "2023-03-28"
+    sessions:
+      - starts: 6:50
+        ends: 7:00
+        title: Connecting time and icebreaker
+      - starts: 7:00
+        ends: 7:15
+        title: Mini-intro
+        url: https://github.com/coderefinery/workshop-intro/blob/master/README.md
+        presenters: Richard
+      - starts: 7:15
+        ends: 9:15
+        title: Reproducible research and FAIR data
+        url: https://coderefinery.github.io/reproducible-research/
+        presenters: Radovan and Matias
+      - starts: 9:15
+        ends: 10:30
+        title: Social coding and open software
+        url: https://coderefinery.github.io/social-coding/
+        presenters: Radovan and Matias
+  - title: "Day 5"
+    date: "2023-03-29"
+    sessions:
+      - starts: 6:50
+        ends: 7:00
+        title: Connecting time and icebreaker
+      - starts: 7:00
+        ends: 8:45
+        title: Jupyter
+        url: https://coderefinery.github.io/jupyter/
+        presenters: Johan and Teemu
+      - starts: 8:45
+        ends: 10:30
+        title: Documentation
+        url: https://coderefinery.github.io/documentation/
+        presenters: Bjørn and Johan
+  - title: "Day 6"
+    date: "2023-03-30"
+    sessions:
+      - starts: 6:50
+        ends: 7:00
+        title: Connecting time and icebreaker
+      - starts: 7:00
+        ends: 8:45
+        title: Software testing
+        url: https://coderefinery.github.io/testing/
+        presenters: Thomas and Teemu
+      - starts: 9:00
+        ends: 10:15
+        title: Modular code development
+        url: https://coderefinery.github.io/modular-type-along/
+        presenters: Thomas and Radovan
+      - starts: 10:15
+        ends: 10:30
+        title: Concluding remarks and where to go from here
+        url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
+        presenters: Richard
+      - starts: 10:30
+        ends: 11:30
+        title: Optional - Meet the instructors on Zoom for a chat

@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 6 - CodeRefinery workshop March 21-23 and 28-30, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css" integrity="sha256-f3SVFXP30MgahZ0Z7Lp1W02MuLgtiAtk8uFqTbGxNfY=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js" integrity="sha256-gHEvLzvpjU93VFTgu5myAgmc+0I1CzBzYe0YhTJ8uqI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js" integrity="sha256-PxrcCuBlFkPVlPsGxNzt59W3EKYOH79z+v/tq9uFS2M=" crossorigin="anonymous"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-03-21-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 6</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:site_name" content="CodeRefinery workshop March 21-23 and 28-30, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - targeted towards researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - targeted towards researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - targeted towards researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-03-21-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-03-21-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 6</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#icebreaker-questions-ice-cream">Icebreaker questions :ice_cream:</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#icebreaker-question-1-what-tools-do-you-use-for-testing-code">Icebreaker question #1 What tools do you use for testing code?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#icebreaker-2-tell-us-some-about-this-course">Icebreaker #2 Tell us some about this course:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#icebreaker-3-what-would-be-the-ideal-format-for-this-course-e-g-like-this-in-person-videos-available-and-scheduled-q-a-mentoring-sessions-etc">Icebreaker #3 What would be the ideal format for this course? (e.g. like this, in-person, videos available and scheduled Q&amp;A&#x2F;mentoring sessions, etc.)</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#questions">Questions</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#software-testing">Software testing</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#software-testing-motivation">Software testing, motivation</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#software-testing-concepts">Software testing, concepts</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#software-testing-testing-locally">Software testing, testing locally</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#exercise-https-coderefinery-github-io-testing-pytest">Exercise https:&#x2F;&#x2F;coderefinery.github.io&#x2F;testing&#x2F;pytest&#x2F;</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#software-testing-automated-testing">Software testing, Automated testing</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#exercise-https-coderefinery-github-io-testing-continuous-integration">Exercise https:&#x2F;&#x2F;coderefinery.github.io&#x2F;testing&#x2F;continuous-integration&#x2F;</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#automated-testing-test-design">Automated testing, test design</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#modular-code-development-starting-questions">Modular code development starting questions</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#questions-suggestions-on-what-we-should-do-next">Questions&#x2F;suggestions on what we should do next</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/#feedback-day-6">Feedback, day 6</a>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreaker-questions-ice-cream">Icebreaker questions :ice_cream:</h2>
+<p>Can we get a little space for giving feedback on stream settings, like audio, etc.? For instance, I'd say audio is still at 40%/60% or even 30%/70% between the speakers. better now?</p>
+<ul>
+<li>Yeah, definitely. I'd say now it's at 40/60 at least</li>
+</ul>
+<h3 id="icebreaker-question-1-what-tools-do-you-use-for-testing-code">Icebreaker question #1 What tools do you use for testing code?</h3>
+<ul>
+<li>plots (+4)</li>
+<li>mini test data before running on big data</li>
+<li>visual inspection after execution</li>
+<li>I simply run it to see if it works - but maybe by including a plot or outputting specific parts  (e.g. lists). (+5)</li>
+<li>Pytest</li>
+<li>Have used unittest. Would love to use <a rel="noopener" target="_blank" href="https://hypothesis.readthedocs.io/">hypothesis</a> but never got around to it
+<ul>
+<li>Looks interesting!</li>
+</ul>
+</li>
+<li>a &quot;fixed&quot; small dataset with known &quot;ground truth&quot; so that if the results change a lot, then something might be wrong</li>
+<li>pytest + Github actions</li>
+</ul>
+<h3 id="icebreaker-2-tell-us-some-about-this-course">Icebreaker #2 Tell us some about this course:</h3>
+<p>How did you attend (alone home/work, small group home/work/online, organized group, ...):</p>
+<ul>
+<li>Organized group in person: oo♥oo♥oo</li>
+<li>Alone at home: ooooooooo</li>
+<li>Zoom group from university: o</li>
+<li>Alone at work: ooooooooooo</li>
+<li>TU Delft workshop: oooooooooo
+<ul>
+<li>Would love to join that one, but is was full (+1)</li>
+</ul>
+</li>
+<li>Switching between alone at home and at work: oooo</li>
+<li>Partly on train: o</li>
+</ul>
+<h3 id="icebreaker-3-what-would-be-the-ideal-format-for-this-course-e-g-like-this-in-person-videos-available-and-scheduled-q-a-mentoring-sessions-etc">Icebreaker #3 What would be the ideal format for this course? (e.g. like this, in-person, videos available and scheduled Q&amp;A/mentoring sessions, etc.)</h3>
+<ul>
+<li>like this but with some scheduled Q&amp;A/mentoring session one week after the course so that we would have time to test what we learned on our real projects and then ask for help.
+<ul>
+<li>Agreed, but maybe a bit more than one week after (I would say 2-3). (+1)
+<ul>
+<li>Yes, you're right 2-3 would be even better!</li>
+</ul>
+</li>
+<li>For those at Aalto, we have daily Q&amp;A on these topics and beyond. https://scicomp.aalto.fi/help/</li>
+<li>For those at Helsinki University there is the weekly &quot;HPC garage&quot; which can also cover the types of questions people might have here https://wiki.helsinki.fi/display/it4sci/HPC+Environment+User+Guide</li>
+<li>at UiT (Tromso): every Wednesday 14-16 (currently in-person but we are thinking about video)</li>
+<li>Are any of these initiatives public?
+<ul>
+<li>public meaning that persons from other places can also join? 
+- Yes! :)
+- &quot;#help&quot; stream at CodeRefinery chat
+- Where can I find this &quot;help&quot; stream?
+- https://coderefinery.zulipchat.com/ We will advertise this again in the outro.
+- otherwise the weekly/daily help sessions often (have to) focus on groups affiliated with the university (have to because of limited resources)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>It is nice the way that you organize it. We are many participants though to be in person, but I found it a bit difficult this document, when we have questions that become very long. Also videos are really important to be available afterwards, so that we or others can try by their own. (+4)</li>
+<li>I think it is great as it is now. This Q&amp;A document is a great way of engaging people in discussion. Also those who would rather not make questions in live voice sessions. (+2)</li>
+<li>I think it is pretty good as it is right now. The biggest issue I have is when there is a problem and you ask a question in the HackMD-chat, but it gets misunderstood and then you have to re-ask the question, and it might be misunderstood again, and then you may be stuck on a particular problem for ever. (If you had a conversation with someone, you could easily tell them if they misunderstand what you're trying to ask) (+1)</li>
+</ul>
+<h2 id="questions">Questions</h2>
+<h2 id="software-testing"><a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/">Software testing</a></h2>
+<p>(also questions about other days most welcome)</p>
+<ol>
+<li>
+<p>I cannot find the video about Jupyter on YouTube, I see only the introduction and the documentation videos. Will that video be uploaded?</p>
+<ul>
+<li>thanks for raising this. we will double-check what happened
+<ul>
+<li>Thanks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I still haven't understood where we can find the material of these days and the Coderefinery chat</p>
+<ul>
+<li>We have the lesson for the current event listed on the workshop page    https://coderefinery.github.io/2023-03-21-workshop/ </li>
+<li>Will that link be permanent?
+<ul>
+<li>Yes I think so. We also have a landing page for past events https://coderefinery.org/workshops/past/ where links to each can be found </li>
+</ul>
+</li>
+<li>There is also lesson page where we list also other lessons https://coderefinery.org/lessons/from-coderefinery/</li>
+<li>How about the chat?
+<ul>
+<li>The questions in the HedgeDoc are archived at  https://coderefinery.github.io/2023-03-21-workshop/questions/</li>
+<li>The chat that was mentioned: https://coderefinery.zulipchat.com/ ?
+<ul>
+<li>Yes, exactly. You are most welcome to join the CodeRefinery Zulip chat. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Got a small question about last days Sphinx stuff. Where should I ask, here or does it go somewhere else?</p>
+<ul>
+<li>Here is OK.</li>
+<li>If the dir structure is one with <code>docs</code> and one with <code>src</code>, and in <code>src</code> I have a <code>file.ipynb</code> that I want to show in my sphinx doc (which is now in <code>docs</code>). Do you have an example showing such use case? (here: (github repo) is an example where all files are in <code>root</code>, which works, but that I would ideally split up into two folders/directories.) -OP
+<ul>
+<li>Personally I think that a &quot;good&quot; directory structure depends on the project. Then again I am not a developer.</li>
+<li>I cannot find an example but assuming you are using the &quot;autodoc&quot; extension to generate documentation from docstrings, then you can refer to &quot;src&quot; in your doc/conf.py like this: `sys.path.insert(0, os.path.abspath('../src'))``</li>
+<li>Right, I found the same, but were not able to get it to work as expected, so I wasn't sure if it was really possible/intended use. -OP</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I've had to reset my terminal a couple of times during these last 5 days. How do I get the git log from all of the days?</p>
+<ul>
+<li>the git log stays recorded in each repository and is attached to each repository directory. in other words it does not disappear. you can navigate back to a git repository and type &quot;git log&quot; and it should be there (it gets saved in a directory called &quot;.git&quot; that is at the location of the git repository)</li>
+<li>Cool. Second question regarding this one... If I can't remember where I saved my different repositories... how can I find their directory haha?
+<ul>
+<li>Hopefully you can find a good structure for your directories so that it is easy to find. Command like <code>find</code> on Linux/Mac help, but you still need to know the [partial] name of the directory. The search button in a files windows on any operating system works too, but you still need to know what you're looking for.
+<ul>
+<li>on Linux/macOS or Git Bash: <code>find . -type d -name &quot;.git&quot;</code> translation: from here and below (the &quot;.&quot;) find all directories (type -d) that are named &quot;.git&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I have to leave in the last 30 minutes of the Modular code development - I hope that is okay :)</p>
+<ul>
+<li>Sure. You can always catch up by reading the lesson or watching it on YouTube.</li>
+</ul>
+</li>
+<li>
+<p>With the file sh (or Snakemake) is it possible to use R script and Python script together?</p>
+<ul>
+<li>Yes. bash scripts (the script.sh example was a bash script) and also Snakemake can execute steps and call other interpreters like R or Python. No problem to have one step using R and another step using Python and yet another using Matlab for instance.</li>
+</ul>
+</li>
+</ol>
+<h2 id="software-testing-motivation"><a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/motivation/">Software testing, motivation</a></h2>
+<ol start="7">
+<li>
+<p>It is not always easy to make a short test to do what would you suggest for that?</p>
+<ul>
+<li>First, try to write small-ish functions and test those</li>
+<li>You can also write tests for larger workflows. It's better to run those manually before releasing a new version or starting a research project.</li>
+</ul>
+</li>
+<li>
+<p>Could the Turing test fall in the category of software testing?</p>
+<ul>
+<li>In general yes, but it is not possible to automate it :smile:</li>
+</ul>
+</li>
+<li>
+<p>Tests help aligning expectations.</p>
+<ul>
+<li>Nice summary. And also help to communicate expectations.</li>
+</ul>
+</li>
+<li>
+<p>Tests are code, how do you do to ensure they aren't bugged themselves?</p>
+<ul>
+<li>Good point. In principle yes, certainly the tests can be buggy themselves. For unit testing, some safety is by construction as each test tests only a small piece of the program. For other type of tests, e.g. regression testing, one rely on a set of reference output that is supposedly the &quot;correct&quot; output.</li>
+<li>But it is really about communicating expectations (comment 9) so at some point we need to define that this is our expectation and I define this as working/true and derive the rest from that. </li>
+<li>Its tests all the way down
+<ul>
+<li>Hm, deep below I am certain there are a pile of turtles :smile:</li>
+</ul>
+</li>
+<li>But it is a great point that we should verify whether the test actually works. One thing I like to do is to introduce a simple error into my code (and later git restore it back) and see whether the test catches it. More than once I created a test and had this confident feeling but the test was never run or was looking &quot;the wrong way&quot;.</li>
+</ul>
+</li>
+<li>
+<p>Does that mean that whenever I write a function I have to write the test function?(+1) </p>
+<ul>
+<li>That is a good workflow. (But I usually don't, I write a few tests at a time.)</li>
+<li>You can also start by writing the test. It's often easier to know what the functions should do than it is to write them.</li>
+</ul>
+</li>
+<li>
+<p>What happens (especially in academia) when you have a previously developed software without any testing functionality nor a documentation? Do you write tests for everything, because whatever you do it breaks the program.</p>
+<ul>
+<li>Best case scenario: you add test and try to fix everything :smile: More realistically try to get the parts you need working and label everything else as &quot;probably not correct&quot;</li>
+<li>For a larger program, a kind of testing that could be considered in first instance is is function testing where the whole code is tested</li>
+<li>Someone who had the experience of using previously developed code, I would go for main function testing.</li>
+</ul>
+</li>
+<li>
+<p>Have you tried GitHub copilot or ChatGPT to write tests, given a function?</p>
+<ul>
+<li>I have :smile: It's especially important to check the code they write... But they are good for writing a template for the test, that you only tweak a little to get it right.</li>
+<li>I have also tried the opposite: wrote a test first and let the GitHub copilot or ChatGPT write the implementation based on the test.</li>
+</ul>
+</li>
+<li>
+<p>What is the difference of software testing to unit testing?</p>
+<ul>
+<li>Unit testing is a type of software testing. Unit testing is when you test a single function, class or similar. (A single unit of the code.)</li>
+</ul>
+</li>
+</ol>
+<h2 id="software-testing-concepts"><a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/concepts/">Software testing, concepts</a></h2>
+<ol start="15">
+<li>
+<p>Do you think you would understand from the testing function what is wrong in the main function code? (of course if something is wrong in the function)</p>
+<ul>
+<li>the first thing we will notice is that something is wrong and that is already good info. then about what exactly is wrong: maybe we have a couple of tests that test different aspects and maybe 4 of them work and 1 of them fails and based on that we can maybe already deduce where the error might be. this will also guide us towards not making the tests too big otherwise we only know that everything works or everything fails. this guides us towards the right granularity of tests which is a process. it's good to start with something and later adjust. difficult and unreasonable to try to make everything perfect from start.</li>
+</ul>
+</li>
+<li>
+<p>Code coverage: what it means if it is one number is better? How would you do code coverage?</p>
+<ul>
+<li>if the percentage is higher, then it means a larger portion of the code has been &quot;visited&quot; when running the test set.</li>
+<li>how to do it: I would use tools like codecov or coveralls</li>
+<li>would this be for Python? yes</li>
+</ul>
+</li>
+<li>
+<p>Answer to 15 seems not completed?</p>
+<ul>
+<li>Thanks for notifying. We will have a look and augment the answer
+<ul>
+<li>yes I got distracted while typing in my office :-)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a rel="noopener" target="_blank" href="https://coderefinery.github.io/2023-03-21-workshop/questions/">Here</a>, you have two <code>Questions and notes from workshop day 4</code>, and not a single one <code>Questions and notes from workshop day 5</code>.</p>
+<ul>
+<li>Thanks for notifying us. Actually it is published there but both day 5 and day 4 reads as day4. We will fix this.</li>
+<li>Fixed <a rel="noopener" target="_blank" href="https://coderefinery.github.io/2023-03-21-workshop/questions/">Here</a>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="software-testing-testing-locally"><a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/pytest/">Software testing, testing locally</a></h2>
+<h2 id="exercise-https-coderefinery-github-io-testing-pytest">Exercise https://coderefinery.github.io/testing/pytest/</h2>
+<ul>
+<li>You can work on everything on that page, there is one optional if you want.  This is a short test of pytest.</li>
+<li>If you can't do it, it's OK, we do something else next.</li>
+</ul>
+<p><strong>How was the exercise?</strong></p>
+<ul>
+<li>it worked: ooooooooooooo</li>
+<li>didn't work: </li>
+<li>needed more time:</li>
+<li>didn't try:</li>
+<li>too much time: ooo</li>
+<li>trivial : ooo</li>
+</ul>
+<ol start="19">
+<li>It is not working . It displayes the following message:</li>
+</ol>
+<pre data-lang="bash" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#5597d6;">pytest -v</span><span> example.py
+</span><span style="color:#72ab00;">=</span><span style="color:#d07711;">========================================= </span><span style="color:#5597d6;">test</span><span> session starts ==========================================
+</span><span style="color:#5597d6;">platform</span><span> linux</span><span style="color:#72ab00;"> --</span><span> Python 3.11.0, pytest-7.2.1, pluggy-1.0.0 -- /home/iker/Software/anaconda3/envs/coderefinery/bin/python3.11
+</span><span style="color:#5597d6;">cachedir:</span><span> .pytest_cache
+</span><span style="color:#5597d6;">rootdir:</span><span> /home/iker/CodeRefinery/Software-testing/python-example
+</span><span style="color:#5597d6;">plugins:</span><span> anyio-3.6.2
+</span><span style="color:#5597d6;">collected</span><span> 0 items                                                                                       
+</span><span>
+</span><span style="color:#72ab00;">=</span><span style="color:#d07711;">======================================== </span><span style="color:#5597d6;">no</span><span> tests ran in 0.00s =========================================
+</span><span style="color:#5597d6;">ERROR:</span><span> file or directory not found: example.py
+</span></code></pre>
+<ul>
+<li>Did you edit a file <code>example.py</code> or another Python script?</li>
+<li>I just copy the script you are giving us.</li>
+<li>did you save it as <code>example.py</code> ?   It can't find it.  if so, are you in the same directory?</li>
+<li>Yes and Yes.</li>
+<li>Solved.
+<ul>
+<li>Good it worked out!</li>
+<li>Great! Could you give a short explanation what the problem was (in case somebody else has similar problem)?</li>
+<li>I changed to superuser to do some stuff. i create the example file there. Then I change back to my user for some reason so then it was not working. My fault. </li>
+<li>One hint in case someone has problems, first activate coderefinery at anaconda, then go to git bash and activate again the coderefinery and then create the directory and the file. At least this was my case and it worked. And don't forget if you see PS C:&gt; in anaconda to change directory (user/yourname)</li>
+</ul>
+</li>
+</ul>
+<ol start="20">
+<li>
+<p>In the excercise point 4 they introduced a change and showed the output. I don't see in the output what is wrong. assert add(2,3) == 5, it is correct right?</p>
+<ul>
+<li>We don't see the change.
+<ul>
+<li>the exercise says notice how pytest is smart and includes lines that failed.</li>
+</ul>
+</li>
+<li>I guess they changed <code>+</code> to <code>-</code>.</li>
+</ul>
+</li>
+<li>
+<p>Again, I had to start with: conda activate coderefinery
+What happens, and do I need to be in the right directory?
+Now pytest -v example.py works fine, but not before the initiation.</p>
+<ul>
+<li>You need to be in the directory where you want to run the tests, typically that is in a [sub-]directory of your code. By activating the coderefinery environment, the corrects PATHs to the conda, python, and other commands will be set accordingly. My point is that you do not need to be in the coderefinery conda env directory.</li>
+</ul>
+</li>
+<li>
+<p>The solution says that &quot;1e-7 can be a bit arbitrary&quot;, but how does pytest.approx work then? Does it not use an arbitrary small constant?</p>
+<ul>
+<li>It actually just uses 1e-6 by default. You can change the tolerance by adding a parameter. (Documentation at https://docs.pytest.org/en/7.1.x/reference/reference.html#pytest-approx).</li>
+<li>It is also arbitrary.</li>
+</ul>
+</li>
+<li>
+<p>Can the tolerance be passed as an argument to the test?</p>
+<ul>
+<li>You can pass a tolerance to approx as <code>1.00004 == approx(1, rel=1e-3)</code>. (Documentation at https://docs.pytest.org/en/7.1.x/reference/reference.html#pytest-approx)</li>
+<li>Great, thanks. But could you pass that argument into the test to &quot;finetune&quot; many tests globally?</li>
+<li>You can add arguments to the pytest call (see https://docs.pytest.org/en/7.1.x/example/parametrize.html). You could also add a configuration file that all tests read to save the parameters.</li>
+</ul>
+</li>
+<li>
+<p>Do I understand this correct that software tests are essentially some particular cases including the ''crazy'', critical ones, e.g. big numbers, large numbers, etc., on which the soft is checked?</p>
+<ul>
+<li>Yes. They are indivual cases where you can check the output. They never guarantee that the code works in all cases, but if the logic is simple enough (for unit tests), you could cover all possible cases.
+<ul>
+<li>The same as at the <a href="https://coderefinery.github.io/2023-03-21-workshop/questions/day6/leetcode.com">leetcode</a>?</li>
+</ul>
+</li>
+<li>It is often better to exclude really weird cases that you don't actually need. For example if one of the parameter is infinity or NaN, the code can just give up and return an error message.</li>
+</ul>
+</li>
+<li>
+<p>What is the -v for in 'pytest -v example.py'?</p>
+<ul>
+<li>&quot;verbose&quot;, it makes it print more about what's going on. Instead of saying that 1 or 2 tests worked, it will then print the precise list of test names and whether they worked or not.</li>
+</ul>
+</li>
+<li>
+<p>What if I want to reduce <code>python -v &lt;name&gt;.py</code> to <code>./&lt;name&gt;.py</code>, is it enough to insert in the Python code the directive <code>#!/bin/python</code> or <code>#!/bin/python3</code> or so? What about the <code>-v</code> option, how to make included in a short version of the python code call command?</p>
+<ul>
+<li>On most terminals that is enough. On linux and mac, you need to make the file executable (chmod +x filename).
+<ul>
+<li>Clear. What about the <code>-v</code> option? How to I include it in a command <code>./&lt;name&gt;.py</code>?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Does aiming on high coverage add runtime overhead on the code? LIke defining sum, multiply etc as own functions.</p>
+<ul>
+<li>It should only add to the test runtime, not the main code.</li>
+</ul>
+</li>
+<li>
+<p>How was it again that i could learn more about pytest/get the help pages?</p>
+<ul>
+<li><code>pytest --help</code>
+-thanks!</li>
+</ul>
+</li>
+<li>
+<p>I think it would help more to discuss the exercise right after giving time to do them. Having a break right after also having time to do exercises makes the pacing feel a bit slow. (+1)</p>
+<ul>
+<li>Agreed. I like the format in which the teacher performs the exercise and explains what is happening. And we can follow along if we want. Now when I performed the exercise I have no feedback on it.
+<ul>
+<li>incidentally feedback from other workshop we got we got criticized for doing that because then it felt like doing it twice and we were asked not to repeat it again. it is not easy to find a good balanance but some form of discussion where we point out possible pitfalls and go through the essential steps is probably good.</li>
+</ul>
+</li>
+<li>Must not be easy to please everyone I guess, appreciate the efforts though! </li>
+<li>As co-organizer I really appreciate the feedback and I agree that the pacing then feels differently. One thing we tried to do more of this time is to give more exercise time and less &quot;instructor talking time&quot;, based on feedback that last time there was not enough time for the groups to interact and no space for the team leads/ helpers to do anything and they felt under-used and it felt for them like not a good use of their time. But now from an individual learner perspective it can feel slow and &quot;empty&quot; at times. Difficult balance and all feedback appreciated on how to improve and re-balance.</li>
+</ul>
+</li>
+<li>
+<p>Could we do breaks an exercise in one. At least anonce the breaks before the exerciese so we don't have to be back just to here that we are going to a break.</p>
+<ul>
+<li>Or could we please not? :D</li>
+<li>Or could we be back, but also get something more than just &quot;ok now break&quot;? Like some reflection about the exercise and the questions that appeared?</li>
+<li>Can we make a poll for what is best (in the feedback of the day?)</li>
+<li>Thanks for good suggestions! we should better communicate the plans. One reason why we didn't glue exercise and break into one thing is that at least past experience shows that breaks are then not taken and exercise expands into the break. But I see how it helps to know when to be back for the real content. </li>
+<li>Yeah both options have different pros and cons :D Maybe we do a poll? Or some third out-of-the-box solution 🤓</li>
+</ul>
+</li>
+</ol>
+<h2 id="software-testing-automated-testing"><a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/continuous-integration/">Software testing, Automated testing</a></h2>
+<ol start="31">
+<li>
+<p>It's fixed, thanks! (+1)</p>
+<ul>
+<li>better? yes</li>
+</ul>
+</li>
+<li>
+<p>Where is :cat: ?</p>
+<ul>
+<li>:-)</li>
+</ul>
+</li>
+<li>
+<p>So are supposed to just watch now or? (+1)</p>
+<ul>
+<li>watching is enough. this is only preparation for exercise</li>
+</ul>
+</li>
+<li>
+<p>Where is the link of the repository on GitHub?</p>
+<ul>
+<li>For Python https://github.com/AaltoRSE/PyTestingExample and for R https://github.com/AaltoRSE/RTestingExample</li>
+<li>Using the opportunity to mention GitHub search that can find repositories and users etc.</li>
+</ul>
+</li>
+<li>
+<p>Are they troubleshooting or is this the lesson already?</p>
+<ul>
+<li>The lesson is currently happening (sorry for the late reply).
+<ul>
+<li>No problem, but yeah it feels like suddenly this is going at 100 mph</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Could someone repeat what we are doing? it is too quick</p>
+<ul>
+<li>Preparing for Exercise CI-1 in https://coderefinery.github.io/testing/continuous-integration/#continuous-integration</li>
+<li>The steps demonstrated now will be part of the exercise session</li>
+</ul>
+</li>
+<li>
+<p>What is meant by all checks passed in github action? I it the tests that we check locally and is done on GitHub?</p>
+<ul>
+<li>Yes, precisely. The same tests can be run locally as well as on GitHub.</li>
+</ul>
+</li>
+</ol>
+<h3 id="exercise-https-coderefinery-github-io-testing-continuous-integration">Exercise https://coderefinery.github.io/testing/continuous-integration/</h3>
+<ul>
+<li>We demoed the first three steps, now try those + the rest yourself</li>
+<li>Do what you can, you can continue later (we don't continue with this later).</li>
+</ul>
+<p><strong>How was the exercise?</strong></p>
+<ul>
+<li>it worked: oo</li>
+<li>didn't work: </li>
+<li>needed more time: o</li>
+<li>didn't try:</li>
+<li>too much time: </li>
+</ul>
+<ol start="38">
+<li>
+<p>Why do we not provide the test file name in pytest in step 2? like before? </p>
+<ul>
+<li>Because pytest automatically detects tests that are &quot;in the right place&quot;. So you only need to indicate a test file if it is not in the expected places. If it's named <code>test_&lt;xyz&gt;.py</code> it will be used as a test.
+<ul>
+<li>does it finds test* in current directory
+<ul>
+<li>if it starts with <code>test_</code> yes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What is the file <em>pycache</em>? <code> (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed) __pycache__/</code></p>
+<ul>
+<li>when you run python code, and import packages etc, python creates a cache, and this is put into the <code>__pycache__</code> folder. Most repositories actually put this in their <code>.gitignore</code> because it's something you don't want in a repo.</li>
+</ul>
+</li>
+<li>
+<p>The instructions say to uncomment a line in <code>example.py</code> but there is no such file in the repo?</p>
+<ul>
+<li>It should read <code>test_functions.py</code>
+<ul>
+<li>So just &quot;remove&quot; one line by adding # in front of it?
+<ul>
+<li>Yes. Lines in which the first non whitespace character is # are considered comments by the python interpreter. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>But is says &quot;uncomment&quot; and there are no comments in the <code>functions.py</code> file
+<ul>
+<li>Sorry again. <code>test_functions.py</code>. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Why the name at the first line is &quot;name: Python application&quot; as opposed to &quot;Python package&quot; in the tutorial? Because there is another option  of Python package in GitHub action.</p>
+<ul>
+<li>hmmm. I see. I wonder how the starting templates differ. Maybe you can compare both and summarize changes here?</li>
+<li>I think python package includes a way to release on PyPI/pip.  Like a library to be reused.</li>
+</ul>
+</li>
+<li>
+<p>A comment: The R testing instructions have a trailing &quot;`&quot; at the end &quot;Rscript -e 'testthat::test_local()'`&quot;</p>
+<ul>
+<li>Thanks for reporting </li>
+</ul>
+</li>
+<li>
+<p>I'm on step 3 and I'm trying to enable the automated testing, but when I pushed the commit, I got this error message: The 'HampusRN/example-ci' repository doesn't contain the '.github/workflows' path in 'main'. Why?</p>
+<ul>
+<li>and that file exists locally on your computer? and it has been &quot;git add&quot;-ed and committed?</li>
+<li>Nope! I don't think I saw any step about that, let me check...
+<ul>
+<li>ah wait sorry my answer above was misleading. in the instructions we commit via the web interface after selecting a starting workflow (the green button &quot;Commit new file&quot;)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>Okay; regardless, now I seem to have the file anyways, although I got the error message... strange!
+<ul>
+<li>let me look ... yes looks good now</li>
+</ul>
+</li>
+</ul>
+<ol start="45">
+<li>
+<p>I'm on Step 3 and the Github page has the below lines 
+permissions:
+contents: read
+appearing before the jobs: ; should I push it down under the jobs: or insert the line 'pull-requests:      write' after the permissions: whereever it is ? </p>
+<ul>
+<li>Just add it wherever the permissions are set. - thanks !</li>
+</ul>
+</li>
+<li>
+<p>Automated tests pass, but I do not see any coverage.xml showing up. </p>
+<ul>
+<li>The coverage doesn't show up anywhere but in the action if you push/commit directly to main. We intentionally did not add things like codecov. If you want a coverage report you will need to create a pull request to your main branch. Then a report will be generated and shown in that pull request.
+<ul>
+<li>I tried pulling to main too, but this also does not create a coverage file. The pull succeeds with the message that everything is up to date. Would that be a wrong configuration then?
+<ul>
+<li>Pull request, not &quot;git pull&quot; , i.e. you have a branch that you try to pull into your main. 
+<ul>
+<li>I see, thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I'm doing the R version. Does subfolder tests go under rtestingexample/R or under rtestingexample? </p>
+<ul>
+<li>rtestingexample/tests, as in the template.
+<ul>
+<li>checking ...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>The last <a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/continuous-integration/#fork-and-clone-an-existing-example-repository">instruction</a> of Step 1: if we created our own repo and cloned, then why do we need to fork and clone an existing example one if it's exactly the same? Where to clone an existing example repo, into our own created repo?</p>
+<ul>
+<li>You don't that's the alternative approach.
+<ul>
+<li>OK, I don't remember this was mentioned.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>git question: if i do git status it checks if my git is up to date with my local repo. How do i check if it is up to date with my remote repo (github)?</p>
+<ul>
+<li>You need to pull in from the external repo first. If you have files that are being edited, and therefore risk to be overwritten by the pull, git will prevent the pull to go through.</li>
+</ul>
+</li>
+<li>
+<p>The page has: &quot;Next uncomment the code in example.py under “step 5”&quot;. But there is no <strong>example.py</strong>. Did you mean <strong>test_functions.py</strong>?</p>
+<ul>
+<li>Sorry. outdated instructions. This file is now called test_functions.py. I will open issue at our lesson repository.</li>
+</ul>
+</li>
+<li>
+<p>Where is the template: see question 47?</p>
+<ul>
+<li>working on it ...
+<ul>
+<li>https://github.com/AaltoRSE/RTestingExample</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In step 3 the coding modifications are not similar to what I have as template, there are no permissions section so do I have to add it as is?</p>
+<ul>
+<li>if in doubt: Just copy the complete action. </li>
+</ul>
+</li>
+<li>
+<p>Why can I not create issues in the forked R testing repo? The bottom is deactivated?</p>
+</li>
+</ol>
+<h2 id="automated-testing-test-design"><a rel="noopener" target="_blank" href="https://coderefinery.github.io/testing/test-design/">Automated testing, test design</a></h2>
+<ol start="53">
+<li>
+<p>Is it possible to carry out automatic testing in a repo with several languages. E.g. python, R, bash? </p>
+<ul>
+<li>Yes it is. Combining Python, R, and bash tests goes fine. One common combination is that you have automated testing for the code (in Python, R, C++ or other language), and also for building the documentation (for instance Sphinx-based documentation)</li>
+<li>Any references I could use? I have an untested repo written mostly in R, but with some python and bash functions and I would like to implement this.</li>
+</ul>
+</li>
+<li>
+<p>In step 3, we get an error for the command <code> pytest --cov-report &quot;xml:coverage.xml&quot;  --cov=.</code> . Error:  pytest: error: unrecognized arguments: --cov-report --cov=. Error: Process completed with exit code 4. Is there anything that we are missing?</p>
+<ul>
+<li>There is a package missing in our https://github.com/coderefinery/software/blob/main/environment.yml I think. sorry for that. creating an issue.</li>
+<li>This is locally, right? Or on github? It was run on github</li>
+<li>It seems that pytest-cov is missing in the environment
+<ul>
+<li>My bad, sorry. Didn't think about adding it to the env when creating the tests.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I can understand how to test functions, but how would you test a GUI?</p>
+<ul>
+<li>There are frameworks for this, but in my experience it's never very easy. You can test the functionality by testing the functions that are triggered when the user clicks a button. But to test the actual GUI, you would need to use something that automates mouse clicks and detects where to click.</li>
+</ul>
+</li>
+<li>
+<p>Should we complete the exercise till step 11?</p>
+<ul>
+<li>If time allows, yes please do so</li>
+</ul>
+</li>
+<li>
+<p>Could you give an example of integration testing?</p>
+<ul>
+<li>If the program is a physics simulator, for example, an integration test would start from a given setup, run for a realistic amount of simulation time and check the output.</li>
+<li>You could run an integration test for the Pi calculation we used earlier. This would mean checking that the output of the whole program is close enough to pi after a large number of steps.</li>
+</ul>
+</li>
+<li>
+<p>&quot;Create Coverage&quot; has not been run in my repo. Is this correct or did I push incorrectly?</p>
+<ul>
+<li>if you push, it won't run. It only runs </li>
+</ul>
+</li>
+<li>
+<p>Very useful exercise to know how push, pull and merge branches work with git(-hub)!</p>
+</li>
+</ol>
+<h2 id="modular-code-development-starting-questions">Modular code development starting questions</h2>
+<p>We will start here: https://coderefinery.github.io/modular-type-along/</p>
+<p>A. What does &quot;modular code development&quot; mean for you?</p>
+<ul>
+<li>
+<p>No idea what modular stands for... (+4)</p>
+</li>
+<li>
+<p>Build codes as shorter pieces/modules that are easier to test, fix and reuse (+4)</p>
+</li>
+<li>
+<p>Dividing your project into segments, each with their own purpose (+2)</p>
+</li>
+<li>
+<p>Moving away from large, linear scripts, and moving towards dividing scripts into functions and classes within 'external' modules (+2)</p>
+</li>
+<li>
+<p>Modules, almost like lego blocks, that can be put together in different systems so that they are not statically connected to the system. Aka you can take some of it and use it elsewhere</p>
+<ul>
+<li>They are not <strong>blocks</strong>, but <strong>bricks</strong>! :D
+<ul>
+<li>Oh wow, how important :D
+<ul>
+<li>I live in DK, and, trust me, arrogant Danes wouldn't be happy :D :D :D</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Self-contained functions (modules)</p>
+</li>
+<li>
+<p>Structured codes developed in a sequential and proper way</p>
+</li>
+<li>
+<p>Developing different chunks and then &quot;merge&quot; them so they can work together in a task.</p>
+</li>
+</ul>
+<p>B. What best practices can you recommend to arrive at well structured,
+modular code in your favourite programming language?</p>
+<ul>
+<li>Still don't know what it is (+1)</li>
+<li>Start with pseudocode to define my problem/idea</li>
+<li>Break down your parts first into e.g. classes and modules that will make sense and then do pseudocode (+1)</li>
+<li>Think about what processes/algorithms/equations you might use more than once, then make it into a function. If you use this function in more than one script, maybe make it into an external module</li>
+<li>No concrete idea. Would be nice to get to know some best practices, if possible</li>
+</ul>
+<p>C. What do you know now about programming that you wish somebody told you earlier?</p>
+<ul>
+<li>Use an IDE instead of nano... (-4) (+1)
+<ul>
+<li>How 'about: &quot;In addition to Nano&quot;?</li>
+<li>Instead of Nano, there is Vim :D
+<ul>
+<li>And there is Emacs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Breaking up problems into small boxes that can easily be addressed on their own (+1)</li>
+<li>What CI is! so many have been talking about this and I never really understood it before now (+1)
+<ul>
+<li>I have the same feeling about Python &amp; C++. I learned C, bash, Perl, Wolfram Mathematica, but never reached neither C++ nor Python, but they are so popular in softdev &amp; research, respectively</li>
+</ul>
+</li>
+<li>Learn about time and space complexity (+1)</li>
+<li>That I should just start using python instead of MatLab even though the university were using MatLab when I started (now they use python). (+2)
+<ul>
+<li>MatLab? Python? Better try Wolfram Mathematica ;)</li>
+<li>Noo, matlab is the best :D :D :D (+2) (-0o2)
+<ul>
+<li>Well, I like MatLab in itself, but companies here all use Python as a standard, since it is free - so much more versatile and usefull in that sense (more uses it). (compared to MatLab)
+<ul>
+<li>It depends on the company; e.g. Ericsson uses C/C++
+<ul>
+<li>Well, I was comparing to MatLab :) MatLab can be better in some cases than Python, but I still wish I learned the other because it is free and therefore used more widely (I also think it is a bit easier to go from python to MatLab than the other way). Currently I use both, but are most comfortable in MatLab!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The importance of proper documentation, ways to do debugging and that we should try to make it open source and shareable</li>
+<li>Some hold that readable code is better than good code. My recommendation is to comment more rather than less. (+1)</li>
+<li>It is possible to break up files into smaller functions too much, a project can become unreadable given too many files.
+<ul>
+<li>[From viewer, not staff] That sounds interesting, could you expand?</li>
+<li>[Reply] I worked in an industrial project with literally ≤15-line program files, written by a coder who separated files way too much. It was not possible to grasp what the files were doing.
+<ul>
+<li>[Reply] I see, that's a good point, thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Revise your code regularly, as you go along</li>
+<li>How to develop large projects, how to write makefiles, how to code in C++, how to get used to classes and OOP in general, a proper, convenient code dev app with GUI, how to use git, what are templates, what are function pointers ...</li>
+<li>Learn how to use APIs</li>
+</ul>
+<p>ℹ️ Here is now some amount of discussion between defferent tools. Let's remember the code of conduct and let's not speak bad of any tool. There are plenty of different tools available and they all have their use cases + people can have their favourites even tho they are not the most handy in your opinion.</p>
+<h2 id="questions-suggestions-on-what-we-should-do-next">Questions/suggestions on what we should do next</h2>
+<ol start="60">
+<li>How do i download the temperatures.csv from the Github page? </li>
+</ol>
+<ul>
+<li>go to here: https://raw.githubusercontent.com/coderefinery/modular-type-along/master/data/temperatures.csv then right click -&gt; download</li>
+<li>or: using wget: <code>wget https://raw.githubusercontent.com/coderefinery/modular-type-along/master/data/temperatures.csv</code></li>
+</ul>
+<ol start="61">
+<li>
+<p>there is a typo in the plot_temperatures function</p>
+<ul>
+<li>It was already fixed</li>
+</ul>
+</li>
+<li>
+<p>should your plot_temperatures function also get a mean as input?</p>
+<ul>
+<li>yes! great input</li>
+</ul>
+</li>
+<li>
+<p>Should this also be made more general by using the FMI API? For example giving only the timeframe to download instead of a specific file which the user could not have.</p>
+<ul>
+<li>What does FMI stand for?
+<ul>
+<li>Finnish Meteorological Institute
+<ul>
+<li>ah yes! :-)</li>
+<li>I would be interested to know how to implement this, but I think it might be out of the scope of the course?
+<ul>
+<li>https://github.com/pnuu/fmiopendata (Python only)</li>
+<li>Thank you!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Perhaps tell plot_temperatures function how many num measurements to use to calculate mean</p>
+<ul>
+<li>Thanks! We inferred this information from the length of the list</li>
+</ul>
+</li>
+<li>
+<p>Plot_mean has a typo in the argument given.</p>
+<ul>
+<li>Thanks</li>
+</ul>
+</li>
+<li>
+<p>Where would you say the balance between rigid functions and customizable functions are? (I know it depends a bit, but a small discussion maybe?) e.g. what about making it possible to change the color for each plot? Line type? etc.</p>
+<ul>
+<li>Great question. it is a process.</li>
+</ul>
+</li>
+<li>
+<p>I'm missing the tests in this script or are the test in a separate script?</p>
+<ul>
+<li>Nice suggestion. noted. We will get there.</li>
+</ul>
+</li>
+<li>
+<p>Does the order of defined functions matter? For your example you can call the plot_mean function (in the second plot_data_and_mean function) because you've created it beforehand, right?</p>
+<ul>
+<li>in our case the order of functions does not matter
+<ul>
+<li>So it will still work if you reverse the order of the functions?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Why not to add mean as an argument to plot_data (and thus plt.axhline into plot_data)?</p>
+<ul>
+<li>Thanks</li>
+</ul>
+</li>
+<li>
+<p>Is it not required to have a main() function as the entry point ? Is it not a best practice?</p>
+<ul>
+<li>Good advice. noted. we will get there.</li>
+</ul>
+</li>
+<li>
+<p>typo: &quot;indputfile&quot; in the read_data function.</p>
+<ul>
+<li>Thanks</li>
+</ul>
+</li>
+<li>
+<p>In Python, functions <code>sum</code> and <code>len</code> are available by default, not as a part of another package like, e.g. <code>plot</code>, are they not?</p>
+<ul>
+<li>Yes</li>
+</ul>
+</li>
+<li>
+<p>num_measurements in the function read_data is not an input of the function. Shouldnt this be an input?</p>
+<ul>
+<li>Solved</li>
+</ul>
+</li>
+<li>
+<p>Labels only shown in the first plot?</p>
+<ul>
+<li>Thanks! Fixed</li>
+</ul>
+</li>
+<li>
+<p>Perhaps it's good to name the file other than 'Untitled.ipynb'.</p>
+<ul>
+<li>Thanks</li>
+</ul>
+</li>
+<li>
+<p>Separate functions &amp; other elements in different cells in Jupyter. Split can be done with <code>ctrl</code>+<code>shift</code>+<code>-</code> (at least in mac)</p>
+<ul>
+<li>Thanks I will raise this</li>
+</ul>
+</li>
+<li>
+<p>Figure could have a grid() added for clarity</p>
+<ul>
+<li>For many scientific journals, grid in plot is considered as bad manners</li>
+</ul>
+</li>
+<li>
+<p>In Python, is it possible to customise plot labels, legends, ticks, e.g. their font, size, colour, log base for log scale?</p>
+<ul>
+<li>Yes, with Matplotlib.
+<ul>
+<li>And also other things, e.g. plot range, plot sizes ratio, figure frames, customised line colours, thickness, dashing, symbol types?
+<ul>
+<li>You can do a lot of things with it: Check https://matplotlib.org/ for examples.</li>
+<li>https://matplotlib.org/cheatsheets/</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Suggested learning material for Matplotlib https://aaltoscicomp.github.io/python-for-scicomp/ and
+https://aaltoscicomp.github.io/python-for-scicomp/data-visualization/</li>
+</ul>
+</li>
+<li>
+<p>How about we add some docstrings and demonstrate the Python help function?</p>
+<ul>
+<li>An excellent suggestion!
+<ul>
+<li>mentioning here that you can add docstrings to functions as<pre data-lang="python" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#72ab00;">def </span><span style="color:#c23f31;">function</span><span>():
+</span><span>    ```
+</span><span>    docstring describing what the function does
+</span><span>    ```
+</span><span>    code inside the function
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>You can also see the <a rel="noopener" target="_blank" href="https://pandas.pydata.org/docs/development/contributing_docstring.html">pandas docstring guide</a></li>
+</ul>
+</li>
+<li>
+<p>It seems you are running temperature plotting file which should not exist anymore?</p>
+<ul>
+<li>o no. I think the file has changed name</li>
+</ul>
+</li>
+</ol>
+<p><strong>Unfortunately points 81 - 90 got lost while migrating contents to the archive HackMD</strong></p>
+<ol start="90">
+<li>
+<p>Nobody is calling the main() (+4)</p>
+<ul>
+<li>Thanks :-)</li>
+<li>We always need at least one functions with side effects</li>
+<li>And a few more eyepairs watching the same code always helps</li>
+<li>&quot;This was all planned&quot;</li>
+</ul>
+</li>
+<li>
+<p><code>if __name__ == &quot;__main__&quot;:</code></p>
+<ul>
+<li>That would have been good. but is very python specific so we won't focus on this one too much</li>
+<li>Would be nice to have this explained here tho 🤓
+<ul>
+<li>This is a good resource: https://realpython.com/if-name-main-python/ </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Show line numbers in the notebook's cell (+1)</p>
+<ul>
+<li>Is it actually possible?
+<ul>
+<li>I think it is but I don't remember how</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>break: now. </p>
+<ul>
+<li>Thanks</li>
+</ul>
+</li>
+<li>
+<p>Should the version be specified?</p>
+<ul>
+<li>For long-term usage a good idea, for development where you are ready to fix things that go wrong, leaving off is OK.</li>
+</ul>
+</li>
+<li>
+<p>When should you include <code>requirements.txt</code> and when <code>environment.yml</code>?</p>
+<ul>
+<li>Great question. Either we will discuss or somebody can comment</li>
+<li>requirements.txt is Python only, so that might make some choices easy.  Though other languages have their own things.</li>
+<li>environment.yml has more in it: conda includes other libraries, so is more self-contained and portable.  Often, environment.yml is used for scientific stuff.</li>
+</ul>
+</li>
+<li>
+<p>Is there an option to create the <code>environment.yml</code> automatically?</p>
+<ul>
+<li>There are ways to export what is currently in the environment.<code>conda env export --from-history</code> is interesting since it makes an environment.yml file out of just what you actually asked.</li>
+</ul>
+</li>
+<li>
+<p>I have a question about environments in Linux. Suppose, I've created a conda environment and have activated it. From now on, each software package which I install, e.g. via <code>apt</code>, <code>pip</code> etc., is a part of only this environment and won't be available of I deactive the environment?</p>
+<ul>
+<li>Close, but only for <code>conda install</code> and <code>pip</code>.  Other things like apt don't know about it.</li>
+<li>conda: <code>pip</code> and <code>conda</code> use it (probably things for other languages, too)</li>
+<li>python virtualenv: only <code>pip</code> uses it.
+<ul>
+<li>right ... so, if I want another person to have my environment, then I save it via, e.g. <code>pip freeze &gt; requirements.txt</code>, send the result file to that person, and then he restores my environment on his machine by <code>pip install -r requirements.txt</code> -- does it work like this?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is it better to have several files with one function each of a single file with all the functions?</p>
+<ul>
+<li>This is a question of preference and depends to some extent on language. For example, in R you should have one function per file. In Python, a file is a &quot;module&quot;, which is usually a collection of related functions and classes.
+<ul>
+<li>And in C / C++, it's even two files: *.c / *.cpp and *.h ...</li>
+</ul>
+</li>
+<li>Ah ok, I work a lot with R too, and I think it is usually better to have individual files, but then you need to source each file at the beginning of the script. I normally do it by iterating through a list of files, but not sure if there is a better way to do it, equivalent to from in Python.
+<ul>
+<li>In Python (and some other languages), you can have a <code>__init__.py</code> file in a folder. Then you can <code>import</code> the <em>folder</em> and that will actually import the <code>__init__.py</code> file. You would often have multiple <code>import</code> statements in <code>__init__.py</code> that import the most important things. So this allows importing many files in one go.</li>
+<li>Sounds interesting, I will look into possible alternatives of this for R then. Thank you! :)
+<ul>
+<li>Guess this is a package in R? Or maybe there is something in between a package and an individual function file.</li>
+<li>It is more like a pipeline. I have a bash file that test command inputs and calls R scripts that contain the pipeline, but inside the pipeline I have several functions written in separate files. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Often I receive a (jupyter) Python code with all modules that need to be imported and all functions defined in the first cell. I continued this practise, but is it better to write functions in unique files instead of in the first or second cell?</p>
+<ul>
+<li>If the functions can  be reused in a different jupyter-file, I would suggest moving them to a separate file. That way you can develop and test them in one place.</li>
+</ul>
+</li>
+<li>
+<p>Why are there files in Python with names starting &amp; maybe also ending from/by the underscore or even two? Do they have special meaning? E.g., <code>__init__.py</code>, why not just <code>init.py</code>?</p>
+<ul>
+<li>Often Python uses two underscores for names that are &quot;part of the language&quot;, or that the user never writes directly. So you never import <code>folder.__init__</code>, you can import <code>folder</code> instead. If a class has a function called <code>__init__</code>, you don't call it. It gets called when you create an object of that class.
+<ul>
+<li>For another example, <code>__str__</code> can be function in a class. It will be called when you try to convert it to a string. So if you print an object of the class, Python will call the <code>__str__</code> function.</li>
+</ul>
+</li>
+<li>A single underscore in front of a name hides it. When you ask Python to list the functions in a file, it will not list functions that start with <code>_</code>.</li>
+</ul>
+</li>
+<li>
+<p>Is it really necessary to test functions that come from a library i.e. functions you did not create yourself?</p>
+<ul>
+<li>typically not necessary</li>
+</ul>
+</li>
+<li>
+<p>Maybe a better test for a file like this could be something like if the file includes a column &quot;temperatures&quot; at all etc.</p>
+<ul>
+<li>Thanks, good suggestion</li>
+</ul>
+</li>
+<li>
+<p>Wait, what was the @click? I missed it.</p>
+<ul>
+<li>It is one of many libraries that can add a command line interface to Python: https://click.palletsprojects.com/
+<ul>
+<li>Thanks! Not heard of it before :)
+<ul>
+<li>other alternatives for Python: docopt, argparse, optparse</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If you have time keep going with the current session, interesting to follow :D </p>
+</li>
+<li>
+<p>Can I seek support if not from Aalto?</p>
+<ul>
+<li>The CodeRefinery Zulip chat is a good and active channel. You are welcome to join at https://coderefinery.zulipchat.com/ Please refer also to the discussion at Icebreaker question #3 in the top of the document for mentioning of local support at other universitites.</li>
+</ul>
+</li>
+</ol>
+<h2 id="feedback-day-6">Feedback, day 6</h2>
+<p>We will paste a Zoom here that you can join to talk to the instructors, after we are done.</p>
+<ul>
+<li>We hope that you had a good workshop and we got you started on a good path.  There is so much more to learn, and we hope you can keep working.</li>
+</ul>
+<p>Today was (multi-choice):</p>
+<ul>
+<li>too fast: oo</li>
+<li>too slow: o</li>
+<li>right speed: oooooo</li>
+<li>too slow sometimes, too fast other times: ooooooooooo</li>
+<li>too advanced:</li>
+<li>too basic: oo</li>
+<li>right level: ooo</li>
+<li>needed more exercise time: o</li>
+<li>needed less exercise time: </li>
+</ul>
+<p>For the course (multi-choice):</p>
+<ul>
+<li>I learned things I will use: oooooooooooooooooooooooo</li>
+<li>I would recommend this to others: ooooooooooooooooooooo</li>
+<li>I should have taken this earlier: ooooooooooooo</li>
+<li>I shouldn't have taken this earlier:</li>
+</ul>
+<p>One good thing about today / this course:</p>
+<ul>
+<li>That automatic debugging tool in GitHub seemed very cool and useful! (+2)</li>
+<li>The concept of testing and how to design a test (beyond just checking that code compiles and runs)</li>
+<li>pytest</li>
+<li>Reiterating over use of git commands for github, git push, pull, merge etc. (+1) </li>
+<li>A nice glimpse into many useful tools.</li>
+<li>Overall the course was really great! Many thanks for putting the effort to make such nice content and for free to everyone! (+1)</li>
+<li>Modular coding is very smart, I should have started earlier with it</li>
+<li>Github actions</li>
+<li>Accessible intro to Git/version control for people without a dev background</li>
+</ul>
+<p>One thing to be improved about today / this course:</p>
+<ul>
+<li>I would have liked to learn more and understand more about the debugging tool in Github. Now it felt like we just pushed a lot of buttons and copy-paste:d some code. I would not feel confident I could set it up myself for another project: o (+1)</li>
+<li>One thing that could be improved with the course, according to me, is more going through what is good and common practice. Sure it is good to learn all different things git can do, but I still don't feel confident what I <em>should</em> do. For example, should I always fork first, clone later, make modifications locally, then push to fork, and then make a pull request? Is that what everyone does? (+1)
+<ul>
+<li>We hope to have a &quot;workflows course&quot; someday that would show more of these actual practices.  We're having trouble finding time to prepare it, though...
+<ul>
+<li>That would be great!! :D (+2)</li>
+</ul>
+</li>
+<li>I personally would recommend to fork for larger projects with multiple collaborators. If it is your own project (even on a shared group-repository), just cloning and pushing/pulling is perfectly fine.</li>
+</ul>
+</li>
+<li>Honestly today was the day that I felt more disconnected to the content. The <em>just watch</em> mode of teaching when writing code live is not so engaging. (+1)</li>
+<li>It felt like we didn't properly talk about common beginner's mistakes, so that could be improved. With multiple problems I had, the answers were a bit like &quot;oh so you did &lt;this obvious beginner's mistake&gt;? You shouldn't do that&quot;, which could have been avoided if we simply had talked a bit more about common things one should <em>not</em> do.</li>
+<li>I would like to understand better how to use Python coverage and how to create GitHub workflows.</li>
+<li>It seems we skipped a large part of testing (test design). 
+<ul>
+<li>Yes, we did move over this pretty quickly. We did discuss some possible approaches to some of the issues, but didn't have the time to go into all details. Feel free to do the exercises for the Test development part, the solutions also give quite some information.</li>
+</ul>
+</li>
+<li>I think git practice is the main motivation of joining the workshop, so a slight increase in focus on using that in all the extra things we learn here, so that we get more familiar with the different steps of pulling, pushing etc. (+4)
+<ul>
+<li>An idea could be to give a bit bigger assignment/exercise here in the end, that learners could do in the following weeks after the course (git heavy of course), and then have one day of lesson in 2-3 weeks, where you follow-up on that exercise.</li>
+</ul>
+</li>
+<li>It would have been nice to talk more about git-integration with other things, like overleaf, matlab, eclipse, etc.</li>
+</ul>
+<p>Any other comments:</p>
+<ul>
+<li>Thanks for everything, this workshop was really great and I learned a lot! (+10)
+<ul>
+<li>Not sure about &quot;learned&quot; a lot, but certainly &quot;saw&quot; and &quot;heard about&quot; a lot, so now I'm excited to elaborate more on these topics (+2)</li>
+</ul>
+</li>
+<li>Having attending a bunch of other workshops on GitHub this was by far the best! I honestly feel that I learned in 2 weeks what I've been struggling to learn 2 years :P Thanks for everything (teachers and the support team alike)! And thanks so very much for uploading the recordings too - I takes away the stress of trying to digest everything during the lessons. Oh, yeah, and the cat :cat: </li>
+<li>Great teachers :) (+9)</li>
+<li>Thank you for the workshop, I've learned that I should have been using Git all along! :')</li>
+<li>Although the descriptions that are available for people to read are helpful, talking about them at the considerable length that was done might be time that is better spent on the exercises and walkthroughs. (+1)</li>
+<li>This (modular coding)  actually gets just started if one person publishes more than one project containing code. First, how do you manage complex dependencies; how do you transfer parts of a project to the next saving copying/retyping the code.</li>
+<li>Do you have more courses during summer which also provides study credits?</li>
+<li>What should we do next as a participant in Finland to get the course credits?</li>
+</ul>
+<p>Suggestions about the course format:</p>
+<ul>
+<li>
+<p>Maybe add Zoom-help in the breaks (or at some other point)? Some problems were really hard to solve in the chat, verbal communication was needed.</p>
+<ul>
+<li>There were several helps organised by individual universities. We did in the past offer general zoom help for registered users, but the rooms essentially were quiet all the time, so we stopped doing it and moved it to the universities.</li>
+</ul>
+</li>
+<li>
+<p>This was great overall, I need to stress that. But I do think the daily schedule could be shorter, either by less/shorter pauses, by splitting across more days, or something alike. This takes a lot ouf a working day.</p>
+</li>
+<li>
+<p>It would be great to have compact cheat sheets for material from earlier days (e.g. how to push things correctly to GitHub, how to use branches, ...) that is used again in later lessons. It is kind of difficult to find this type of info quickly while working on a problem. (+4)</p>
+</li>
+<li>
+<p>I think it worked great the way it was. Thank you so much for this! Would just love to have a mentoring/help session in a few weeks so could have time to test these things on our real projects.</p>
+</li>
+<li>
+<p>The code checkpoints in the examples were a great idea. As in, newbie students who accidentally broke something git-wise, could catch up to the main workshop by cloning working checkpoint examples. (+1)</p>
+</li>
+<li>
+<p>I'm still confused about who we are supposed to email for the certificate? (I am from the University of Helsinki) I've got the instructions of the &quot;homework&quot; but it just says return via email?</p>
+<ul>
+<li>On the website it's written: Your submission can then be sent via email to scip@aalto.fi by the 15th of April 2023 and you will receive the certificate by the middle of May.
+<ul>
+<li>Ok thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github"></a>
+      </li>
+      <li>
+       <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-03-21-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
